@@ -1,0 +1,357 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.karim.wonderjoys"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:5-66
+14-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+15-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+16-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:24:5-79
+17-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:24:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->[com.google.android.gms:play-services-measurement-api:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/c141986f6ded802b7fc8c14284806001/jetified-play-services-measurement-api-18.0.3/AndroidManifest.xml:24:5-68
+18-->[com.google.android.gms:play-services-measurement-api:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/c141986f6ded802b7fc8c14284806001/jetified-play-services-measurement-api-18.0.3/AndroidManifest.xml:24:22-65
+19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+19-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:26:5-110
+19-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:26:22-107
+20
+21    <application
+21-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:4:4-42:19
+22        android:name="io.flutter.app.FlutterApplication"
+22-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:5:9-57
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.6.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/ee8ad688a0bb7602014901f970cdd2dc/core-1.6.0/AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:icon="@mipmap/ic_launcher"
+25-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:7:9-43
+26        android:label="WonderJoys" >
+26-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:6:9-35
+27        <activity
+27-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:8:9-36:20
+28            android:name="com.karim.wonderjoys.MainActivity"
+28-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:9:13-41
+29            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+29-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:12:13-163
+30            android:hardwareAccelerated="true"
+30-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:13:13-47
+31            android:launchMode="singleTop"
+31-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:10:13-43
+32            android:theme="@style/LaunchTheme"
+32-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:11:13-47
+33            android:windowSoftInputMode="adjustResize" >
+33-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:14:13-55
+34
+35            <!--
+36                 Specifies an Android theme to apply to this Activity as soon as
+37                 the Android process has started. This theme is visible to the user
+38                 while the Flutter UI initializes. After that, this theme continues
+39                 to determine the Window background behind the Flutter UI.
+40            -->
+41            <meta-data
+41-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:19:13-22:17
+42                android:name="io.flutter.embedding.android.NormalTheme"
+42-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:20:15-70
+43                android:resource="@style/NormalTheme" />
+43-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:21:15-52
+44            <!--
+45                 Displays an Android View that continues showing the launch screen
+46                 Drawable until Flutter paints its first frame, then this splash
+47                 screen fades out. A splash screen is useful to avoid any visual
+48                 gap between the end of Android's launch screen and the painting of
+49                 Flutter's first frame.
+50            -->
+51            <meta-data
+51-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:28:13-31:17
+52                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+52-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:29:15-79
+53                android:resource="@drawable/launch_background" />
+53-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:30:15-61
+54
+55            <intent-filter>
+55-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:32:13-35:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:33:17-68
+56-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:33:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:34:17-76
+58-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:34:27-74
+59            </intent-filter>
+60        </activity>
+61        <!--
+62             Don't delete the meta-data below.
+63             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+64        -->
+65        <meta-data
+65-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:39:9-41:33
+66            android:name="flutterEmbedding"
+66-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:40:13-44
+67            android:value="2" />
+67-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:41:13-30
+68
+69        <service
+69-->[:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+70            android:name="com.google.firebase.components.ComponentDiscoveryService"
+70-->[:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+71            android:directBootAware="true"
+71-->[com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+72            android:exported="false" >
+72-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:76:13-37
+73            <meta-data
+73-->[:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+74                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+74-->[:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+76            <meta-data
+76-->[:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+77-->[:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+79            <meta-data
+79-->[:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+80                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+80-->[:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+82            <meta-data
+82-->[:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+83                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+83-->[:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+85            <meta-data
+85-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:77:13-79:85
+86                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+86-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:78:17-109
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:79:17-82
+88            <meta-data
+88-->[com.google.firebase:firebase-firestore:22.1.2] /Users/krym/.gradle/caches/transforms-2/files-2.1/ac56e81a16f545db7d0c42c3f589581f/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:20:13-22:85
+89                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+89-->[com.google.firebase:firebase-firestore:22.1.2] /Users/krym/.gradle/caches/transforms-2/files-2.1/ac56e81a16f545db7d0c42c3f589581f/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:21:17-111
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-firestore:22.1.2] /Users/krym/.gradle/caches/transforms-2/files-2.1/ac56e81a16f545db7d0c42c3f589581f/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:22:17-82
+91            <meta-data
+91-->[com.google.firebase:firebase-storage:19.2.2] /Users/krym/.gradle/caches/transforms-2/files-2.1/d0bf50bdc2f7fc550241d725d534285e/jetified-firebase-storage-19.2.2/AndroidManifest.xml:33:13-35:85
+92                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+92-->[com.google.firebase:firebase-storage:19.2.2] /Users/krym/.gradle/caches/transforms-2/files-2.1/d0bf50bdc2f7fc550241d725d534285e/jetified-firebase-storage-19.2.2/AndroidManifest.xml:34:17-107
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[com.google.firebase:firebase-storage:19.2.2] /Users/krym/.gradle/caches/transforms-2/files-2.1/d0bf50bdc2f7fc550241d725d534285e/jetified-firebase-storage-19.2.2/AndroidManifest.xml:35:17-82
+94            <meta-data
+94-->[com.google.android.gms:play-services-measurement-api:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/c141986f6ded802b7fc8c14284806001/jetified-play-services-measurement-api-18.0.3/AndroidManifest.xml:30:13-32:85
+95                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+95-->[com.google.android.gms:play-services-measurement-api:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/c141986f6ded802b7fc8c14284806001/jetified-play-services-measurement-api-18.0.3/AndroidManifest.xml:31:17-139
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.android.gms:play-services-measurement-api:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/c141986f6ded802b7fc8c14284806001/jetified-play-services-measurement-api-18.0.3/AndroidManifest.xml:32:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-installations:16.3.5] /Users/krym/.gradle/caches/transforms-2/files-2.1/af7bd7285f417c7ff0dc1a74b43042da/jetified-firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
+98                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+98-->[com.google.firebase:firebase-installations:16.3.5] /Users/krym/.gradle/caches/transforms-2/files-2.1/af7bd7285f417c7ff0dc1a74b43042da/jetified-firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-installations:16.3.5] /Users/krym/.gradle/caches/transforms-2/files-2.1/af7bd7285f417c7ff0dc1a74b43042da/jetified-firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
+100            <!--
+101                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+102                clients to use it as well, by defining this registrar in their own core/common library.
+103            -->
+104            <meta-data
+104-->[com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+105                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+105-->[com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+107        </service>
+108
+109        <provider
+109-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+110            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+110-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+111            android:authorities="com.karim.wonderjoys.flutter.image_provider"
+111-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+112            android:exported="false"
+112-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+113            android:grantUriPermissions="true" >
+113-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+114            <meta-data
+114-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+115                android:name="android.support.FILE_PROVIDER_PATHS"
+115-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+116                android:resource="@xml/flutter_image_picker_file_paths" />
+116-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+117        </provider>
+118
+119        <activity
+119-->[:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+120            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+120-->[:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+121            android:exported="false"
+121-->[:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+122            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+122-->[:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+123        <activity
+123-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:27:9-44:20
+124            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+124-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:28:13-80
+125            android:excludeFromRecents="true"
+125-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:29:13-46
+126            android:exported="true"
+126-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:30:13-36
+127            android:launchMode="singleTask"
+127-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:31:13-44
+128            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+128-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:32:13-72
+129            <intent-filter>
+129-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:33:13-43:29
+130                <action android:name="android.intent.action.VIEW" />
+130-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:17-69
+130-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:25-66
+131
+132                <category android:name="android.intent.category.DEFAULT" />
+132-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:36:17-76
+132-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:36:27-73
+133                <category android:name="android.intent.category.BROWSABLE" />
+133-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:17-78
+133-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:27-75
+134
+135                <data
+135-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:39:17-42:51
+136                    android:host="firebase.auth"
+136-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:40:21-49
+137                    android:path="/"
+137-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:41:21-37
+138                    android:scheme="genericidp" />
+138-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:42:21-48
+139            </intent-filter>
+140        </activity>
+141        <activity
+141-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:45:9-62:20
+142            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+142-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:46:13-79
+143            android:excludeFromRecents="true"
+143-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:47:13-46
+144            android:exported="true"
+144-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:48:13-36
+145            android:launchMode="singleTask"
+145-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:49:13-44
+146            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+146-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:50:13-72
+147            <intent-filter>
+147-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:51:13-61:29
+148                <action android:name="android.intent.action.VIEW" />
+148-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:17-69
+148-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:34:25-66
+149
+150                <category android:name="android.intent.category.DEFAULT" />
+150-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:36:17-76
+150-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:36:27-73
+151                <category android:name="android.intent.category.BROWSABLE" />
+151-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:17-78
+151-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:37:27-75
+152
+153                <data
+153-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:39:17-42:51
+154                    android:host="firebase.auth"
+154-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:40:21-49
+155                    android:path="/"
+155-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:41:21-37
+156                    android:scheme="recaptcha" />
+156-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:42:21-48
+157            </intent-filter>
+158        </activity>
+159
+160        <service
+160-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:64:9-73:19
+161            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+161-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:65:13-101
+162            android:enabled="true"
+162-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:66:13-35
+163            android:exported="false" >
+163-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:67:13-37
+164            <intent-filter>
+164-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:68:13-72:29
+165                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+165-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:69:17-89
+165-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:69:25-86
+166
+167                <category android:name="android.intent.category.DEFAULT" />
+167-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:36:17-76
+167-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:36:27-73
+168            </intent-filter>
+169        </service>
+170
+171        <provider
+171-->[com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+172            android:name="com.google.firebase.provider.FirebaseInitProvider"
+172-->[com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+173            android:authorities="com.karim.wonderjoys.firebaseinitprovider"
+173-->[com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+174            android:directBootAware="true"
+174-->[com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+175            android:exported="false"
+175-->[com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+176            android:initOrder="100" />
+176-->[com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+177
+178        <receiver
+178-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:29:9-33:20
+179            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+179-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:30:13-85
+180            android:enabled="true"
+180-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:31:13-35
+181            android:exported="false" >
+181-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:32:13-37
+182        </receiver>
+183
+184        <service
+184-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:35:9-38:40
+185            android:name="com.google.android.gms.measurement.AppMeasurementService"
+185-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:36:13-84
+186            android:enabled="true"
+186-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:37:13-35
+187            android:exported="false" />
+187-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:38:13-37
+188        <service
+188-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:39:9-43:72
+189            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+189-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:40:13-87
+190            android:enabled="true"
+190-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:41:13-35
+191            android:exported="false"
+191-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:42:13-37
+192            android:permission="android.permission.BIND_JOB_SERVICE" />
+192-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:43:13-69
+193
+194        <activity
+194-->[com.google.android.gms:play-services-base:17.1.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/90a5b4cb2fd9ac819652dcd9e531b5b9/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+195            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+195-->[com.google.android.gms:play-services-base:17.1.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/90a5b4cb2fd9ac819652dcd9e531b5b9/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+196            android:exported="false"
+196-->[com.google.android.gms:play-services-base:17.1.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/90a5b4cb2fd9ac819652dcd9e531b5b9/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+197            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+197-->[com.google.android.gms:play-services-base:17.1.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/90a5b4cb2fd9ac819652dcd9e531b5b9/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+198
+199        <meta-data
+199-->[com.google.android.gms:play-services-basement:17.1.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/dcaec673d11c8e2dd5451c3f35f9dd5f/jetified-play-services-basement-17.1.0/AndroidManifest.xml:23:9-25:69
+200            android:name="com.google.android.gms.version"
+200-->[com.google.android.gms:play-services-basement:17.1.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/dcaec673d11c8e2dd5451c3f35f9dd5f/jetified-play-services-basement-17.1.0/AndroidManifest.xml:24:13-58
+201            android:value="@integer/google_play_services_version" />
+201-->[com.google.android.gms:play-services-basement:17.1.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/dcaec673d11c8e2dd5451c3f35f9dd5f/jetified-play-services-basement-17.1.0/AndroidManifest.xml:25:13-66
+202    </application>
+203
+204</manifest>

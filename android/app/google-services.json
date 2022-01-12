@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "843929927608",
+    "project_id": "wonderjoysdev-d47f9",
+    "storage_bucket": "wonderjoysdev-d47f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843929927608:android:9f0ad99e739ea749b4994d",
+        "android_client_info": {
+          "package_name": "com.karim.wonderjoys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843929927608-jfjbs3o6ujlu64oimlpraratt8ub5fha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6SSza9fHVtUyiV3jULW7RFcbLhpAUv24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843929927608-jfjbs3o6ujlu64oimlpraratt8ub5fha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

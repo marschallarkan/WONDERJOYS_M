@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">843929927608-jfjbs3o6ujlu64oimlpraratt8ub5fha.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">843929927608</string>
+    <string name="google_api_key" translatable="false">AIzaSyA6SSza9fHVtUyiV3jULW7RFcbLhpAUv24</string>
+    <string name="google_app_id" translatable="false">1:843929927608:android:9f0ad99e739ea749b4994d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA6SSza9fHVtUyiV3jULW7RFcbLhpAUv24</string>
+    <string name="google_storage_bucket" translatable="false">wonderjoysdev-d47f9.appspot.com</string>
+    <string name="project_id" translatable="false">wonderjoysdev-d47f9</string>
+</resources>

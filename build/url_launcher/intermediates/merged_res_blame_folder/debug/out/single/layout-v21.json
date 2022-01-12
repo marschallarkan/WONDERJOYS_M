@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/ee8ad688a0bb7602014901f970cdd2dc/core-1.6.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/ee8ad688a0bb7602014901f970cdd2dc/core-1.6.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/ee8ad688a0bb7602014901f970cdd2dc/core-1.6.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/ee8ad688a0bb7602014901f970cdd2dc/core-1.6.0/res/layout-v21/notification_action.xml"
+    }
+]

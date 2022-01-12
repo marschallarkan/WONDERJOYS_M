@@ -1,0 +1,2 @@
+com/shatsy/pinchzoomimage/BuildConfig.java
+ com.shatsy.pinchzoomimage.BuildConfig
