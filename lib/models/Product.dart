@@ -2,12 +2,12 @@ import 'package:wonderjoys/models/Model.dart';
 import 'package:enum_to_string/enum_to_string.dart';
 
 enum ProductType {
-  Electronics,
-  Books,
-  Fashion,
-  Groceries,
-  Art,
-  Others,
+  Elettronica,
+  Food,
+  Moda,
+  Bellezza,
+  Servizi,
+  Altre,
 }
 
 class Product extends Model {

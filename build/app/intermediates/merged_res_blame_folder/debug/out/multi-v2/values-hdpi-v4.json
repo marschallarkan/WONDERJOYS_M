@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/krym/Downloads/WONDERJOYS_M/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "/Users/krym/Documents/WONDERJOYS_M/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
                     "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/d3617fdd8830cb8de70fba9976961d04/appcompat-1.0.0/res/values-hdpi-v4/values-hdpi-v4.xml",

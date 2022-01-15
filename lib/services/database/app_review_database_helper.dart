@@ -3,7 +3,7 @@ import 'package:wonderjoys/models/AppReview.dart';
 import 'package:wonderjoys/services/authentification/authentification_service.dart';
 
 class AppReviewDatabaseHelper {
-  static const String APP_REVIEW_COLLECTION_NAME = "Recensioni_di app";
+  static const String APP_REVIEW_COLLECTION_NAME = "app_reviews";
 
   AppReviewDatabaseHelper._privateConstructor();
   static AppReviewDatabaseHelper _instance =

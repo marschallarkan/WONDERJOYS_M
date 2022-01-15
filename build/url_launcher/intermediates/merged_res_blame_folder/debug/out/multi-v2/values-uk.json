@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml",
+            "outputFile": "/Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml",
             "map": [
                 {
                     "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/ee8ad688a0bb7602014901f970cdd2dc/core-1.6.0/res/values-uk/values-uk.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "/Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/res/merged/debug/values-uk/values-uk.xml",
+            "outputFile": "/Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/res/merged/debug/values-uk/values-uk.xml",
             "map": [
                 {
                     "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/ee8ad688a0bb7602014901f970cdd2dc/core-1.6.0/res/values-uk/values-uk.xml",

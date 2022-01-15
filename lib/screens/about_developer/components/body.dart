@@ -32,24 +32,25 @@ class Body extends StatelessWidget {
                   style: headingStyle,
                 ),
                 SizedBox(height: getProportionateScreenHeight(50)),
-                InkWell(
-                  onTap: () async {
-                    const String linkedInUrl =
-                        "https://www.linkedin.com/in/karim-osman-247900122";
-                    await launchUrl(linkedInUrl);
-                  },
-                  child: buildDeveloperAvatar(),
+                CircleAvatar(
+                  backgroundImage: AssetImage('assets/images/developer.png'),
+                  radius: SizeConfig.screenWidth * 0.3,
+                  backgroundColor: kTextColor.withOpacity(0.75),
                 ),
+
                 SizedBox(height: getProportionateScreenHeight(30)),
                 Text(
-                  '" Karim Osman "',
+                  'Mario J Landi',
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
                 Text(
-                  "PCCoE Pune",
+                  "Giuseppe Limoli in arte Mario J Landi,"
+                      " Imprenditore, Motivatore, Blogger,"
+                      " Scrittore, Comico, Rapper, Instagrammer,"
+                      " Tik Tokker aggiungerei qualcos'altro ma rischierei di non avere tempo per la meditazione",
                   style: TextStyle(
                     fontSize: 21,
                     fontWeight: FontWeight.w500,
@@ -61,28 +62,28 @@ class Body extends StatelessWidget {
                     Spacer(),
                     IconButton(
                       icon: SvgPicture.asset(
-                        "assets/icons/github_icon.svg",
+                        "assets/icons/tiktok_logo.svg",
                         color: kTextColor.withOpacity(0.75),
                       ),
                       color: kTextColor.withOpacity(0.75),
                       iconSize: 40,
                       padding: EdgeInsets.all(16),
                       onPressed: () async {
-                        const String githubUrl = "https://github.com/imRB7here";
-                        await launchUrl(githubUrl);
+                        const String tiktokUrl = "https://www.tiktok.com/@mariojlandi?lang=it-IT";
+                        await launchUrl(tiktokUrl);
                       },
                     ),
                     IconButton(
                       icon: SvgPicture.asset(
-                        "assets/icons/linkedin_icon.svg",
+                        "assets/icons/facebook-2.svg",
                         color: kTextColor.withOpacity(0.75),
                       ),
                       iconSize: 40,
                       padding: EdgeInsets.all(16),
                       onPressed: () async {
-                        const String linkedInUrl =
-                            "https://www.linkedin.com/in/karim-osman-247900122";
-                        await launchUrl(linkedInUrl);
+                        const String facebookUrl =
+                            "https://www.facebook.com/mariojlandi";
+                        await launchUrl(facebookUrl);
                       },
                     ),
                     IconButton(
@@ -92,8 +93,19 @@ class Body extends StatelessWidget {
                       padding: EdgeInsets.all(16),
                       onPressed: () async {
                         const String instaUrl =
-                            "https://www.instagram.com/_rahul.badgujar_";
+                            "https://www.instagram.com/mariojlandi";
                         await launchUrl(instaUrl);
+                      },
+                    ),
+                    IconButton(
+                      icon: SvgPicture.asset("assets/icons/web.svg",
+                          color: kTextColor.withOpacity(0.75)),
+                      iconSize: 40,
+                      padding: EdgeInsets.all(16),
+                      onPressed: () async {
+                        const String webUrl =
+                            "www.mariojlandi.com";
+                        await launchUrl(webUrl);
                       },
                     ),
                     Spacer(),
@@ -167,7 +179,7 @@ class Body extends StatelessWidget {
       if (await canLaunch(url)) {
         await launch(url);
       } else {
-        Logger().i("Impossibile avviare l'URL di LinkedIn");
+        Logger().i("Impossibile avviare l'URL di Instagram");
       }
     } catch (e) {
       Logger().e("Eccezione durante l'avvio dell'URL: $e");

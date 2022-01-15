@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/krym/Downloads/WONDERJOYS_M/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml",
+            "outputFile": "/Users/krym/Documents/WONDERJOYS_M/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml",
             "map": [
                 {
                     "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/dcaec673d11c8e2dd5451c3f35f9dd5f/jetified-play-services-basement-17.1.0/res/values-in/values.xml",

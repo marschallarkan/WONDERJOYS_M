@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/krym/Downloads/WONDERJOYS_M/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/krym/Documents/WONDERJOYS_M/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/25e6ef29fc4703766083b03c768dbc7f/material-1.0.0/res/values-v21/values-v21.xml",

@@ -1,19 +1,19 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
-INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
-INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
-INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
-MERGED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
-MERGED from [:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
-MERGED from [:flutter_plugin_android_lifecycle] /Users/krym/Downloads/WONDERJOYS_M/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
-MERGED from [:permission_handler] /Users/krym/Downloads/WONDERJOYS_M/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:pinch_zoom_image_updated] /Users/krym/Downloads/WONDERJOYS_M/build/pinch_zoom_image_updated/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
+INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
+INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
+INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
+MERGED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
+MERGED from [:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [:flutter_plugin_android_lifecycle] /Users/krym/Documents/WONDERJOYS_M/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:permission_handler] /Users/krym/Documents/WONDERJOYS_M/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:pinch_zoom_image_updated] /Users/krym/Documents/WONDERJOYS_M/build/pinch_zoom_image_updated/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/44712e0a962db0d083f3408fe6e4f85b/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-core:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/860541f19d009cb3a5556d43d102bbd7/jetified-firebase-core-18.0.3/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-analytics:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/761f0e720b77f4f2428479646f5c3d17/jetified-firebase-analytics-18.0.3/AndroidManifest.xml:2:1-9:12
@@ -78,27 +78,27 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/krym/.gradle/c
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.1] /Users/krym/.gradle/caches/transforms-2/files-2.1/ea4bdea245781c005e943941cb49265b/jetified-protolite-well-known-types-17.1.1/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.28.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/1c5aaf1a342a82fe816777bb66d09ad9/jetified-grpc-android-1.28.0/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/0810c00e43d51b7026f0a5146c5b041a/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:2:5-35
-		INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:2:5-35
+		INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
-		INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
+		INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
-		INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:1-43:12
+		INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:5-66
-MERGED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:5-66
-MERGED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:5-66
+ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:5-66
+MERGED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:5-66
+MERGED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:5-66
 MERGED from [com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-firestore:22.1.2] /Users/krym/.gradle/caches/transforms-2/files-2.1/ac56e81a16f545db7d0c42c3f589581f/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:14:5-67
@@ -116,21 +116,21 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.3] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/c93ce7ddff3983aa0cae64dac83e9cda/jetified-play-services-measurement-sdk-api-18.0.3/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/c93ce7ddff3983aa0cae64dac83e9cda/jetified-play-services-measurement-sdk-api-18.0.3/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:22-64
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:22-64
 application
-ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:4:4-42:19
-MERGED from [:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
-MERGED from [:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:4:4-42:19
+MERGED from [:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
 MERGED from [com.google.firebase:firebase-core:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/860541f19d009cb3a5556d43d102bbd7/jetified-firebase-core-18.0.3/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/860541f19d009cb3a5556d43d102bbd7/jetified-firebase-core-18.0.3/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/761f0e720b77f4f2428479646f5c3d17/jetified-firebase-analytics-18.0.3/AndroidManifest.xml:7:5-20
@@ -180,75 +180,75 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/krym
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/ee8ad688a0bb7602014901f970cdd2dc/core-1.6.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:7:9-43
 	android:name
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:5:9-57
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:5:9-57
 activity#com.karim.wonderjoys.MainActivity
-ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:8:9-36:20
+ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:8:9-36:20
 	android:launchMode
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:10:13-43
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:10:13-43
 	android:hardwareAccelerated
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:13:13-47
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:13:13-47
 	android:windowSoftInputMode
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:14:13-55
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:14:13-55
 	android:configChanges
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:12:13-163
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:12:13-163
 	android:theme
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:11:13-47
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:11:13-47
 	android:name
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:9:13-41
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:9:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:19:13-22:17
+ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:19:13-22:17
 	android:resource
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:21:15-52
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:21:15-52
 	android:name
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:20:15-70
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:20:15-70
 meta-data#io.flutter.embedding.android.SplashScreenDrawable
-ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:28:13-31:17
+ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:28:13-31:17
 	android:resource
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:30:15-61
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:30:15-61
 	android:name
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:29:15-79
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:29:15-79
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:32:13-35:29
+ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:32:13-35:29
 action#android.intent.action.MAIN
-ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:33:17-68
+ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:33:17-68
 	android:name
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:33:25-66
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:34:17-76
+ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:34:17-76
 	android:name
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:34:27-74
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:34:27-74
 meta-data#flutterEmbedding
-ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:39:9-41:33
+ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:39:9-41:33
 	android:value
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:41:13-30
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:41:13-30
 	android:name
-		ADDED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:40:13-44
+		ADDED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:40:13-44
 uses-sdk
-INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
-MERGED from [:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] /Users/krym/Downloads/WONDERJOYS_M/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] /Users/krym/Downloads/WONDERJOYS_M/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:permission_handler] /Users/krym/Downloads/WONDERJOYS_M/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:permission_handler] /Users/krym/Downloads/WONDERJOYS_M/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:pinch_zoom_image_updated] /Users/krym/Downloads/WONDERJOYS_M/build/pinch_zoom_image_updated/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:pinch_zoom_image_updated] /Users/krym/Downloads/WONDERJOYS_M/build/pinch_zoom_image_updated/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /Users/krym/Documents/WONDERJOYS_M/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /Users/krym/Documents/WONDERJOYS_M/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler] /Users/krym/Documents/WONDERJOYS_M/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler] /Users/krym/Documents/WONDERJOYS_M/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:pinch_zoom_image_updated] /Users/krym/Documents/WONDERJOYS_M/build/pinch_zoom_image_updated/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:pinch_zoom_image_updated] /Users/krym/Documents/WONDERJOYS_M/build/pinch_zoom_image_updated/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/44712e0a962db0d083f3408fe6e4f85b/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/44712e0a962db0d083f3408fe6e4f85b/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-core:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/860541f19d009cb3a5556d43d102bbd7/jetified-firebase-core-18.0.3/AndroidManifest.xml:5:5-44
@@ -377,22 +377,22 @@ MERGED from [io.grpc:grpc-android:1.28.0] /Users/krym/.gradle/caches/transforms-
 MERGED from [io.grpc:grpc-android:1.28.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/1c5aaf1a342a82fe816777bb66d09ad9/jetified-grpc-android-1.28.0/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/0810c00e43d51b7026f0a5146c5b041a/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/0810c00e43d51b7026f0a5146c5b041a/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/krym/Downloads/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/krym/Documents/WONDERJOYS_M/android/app/src/debug/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:74:9-80:19
 MERGED from [com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:74:9-80:19
 MERGED from [com.google.firebase:firebase-firestore:22.1.2] /Users/krym/.gradle/caches/transforms-2/files-2.1/ac56e81a16f545db7d0c42c3f589581f/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:17:9-23:19
@@ -412,63 +412,63 @@ MERGED from [com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/cac
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
-ADDED from [:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+		ADDED from [:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+		ADDED from [:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+		ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+		ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
-ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
 	android:grantUriPermissions
-		ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+		ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
 	android:authorities
-		ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+		ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
 	android:exported
-		ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+		ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+		ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
 	android:resource
-		ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+		ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
 	android:name
-		ADDED from [:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+		ADDED from [:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
 activity#io.flutter.plugins.urllauncher.WebViewActivity
-ADDED from [:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+ADDED from [:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
 	android:exported
-		ADDED from [:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+		ADDED from [:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
 	android:theme
-		ADDED from [:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+		ADDED from [:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
 	android:name
-		ADDED from [:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+		ADDED from [:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-firestore:22.1.2] /Users/krym/.gradle/caches/transforms-2/files-2.1/ac56e81a16f545db7d0c42c3f589581f/jetified-firebase-firestore-22.1.2/AndroidManifest.xml:13:5-79

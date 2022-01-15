@@ -32,8 +32,8 @@ class FirestoreFilesAccess {
   }
 
   Future<String> getDeveloperImage() async {
-    const filename = "sullo sviluppatore / sviluppatore";
-    List<String> extensions = <String>["jpg", "jpeg", "jpe", "jfif"];
+    const filename = "assets/images/developer";
+    List<String> extensions = <String>["jpg", "jpeg", "jpe", "jfif","png"];
     final Reference firestorageRef = FirebaseStorage.instance.ref();
     for (final ext in extensions) {
       try {

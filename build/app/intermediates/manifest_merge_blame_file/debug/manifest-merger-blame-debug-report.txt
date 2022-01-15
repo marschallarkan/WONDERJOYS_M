@@ -12,14 +12,14 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:5-66
-14-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:22-64
+14-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:5-66
+14-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:3:22-64
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
-15-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+15-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+15-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-16-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
-16-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+16-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+16-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 17-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:24:5-79
 17-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:24:22-76
@@ -31,30 +31,30 @@
 19-->[com.google.android.gms:play-services-measurement:18.0.3] /Users/krym/.gradle/caches/transforms-2/files-2.1/897c5b7c9ac53ca0a3b9567094952675/jetified-play-services-measurement-18.0.3/AndroidManifest.xml:26:22-107
 20
 21    <application
-21-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:4:4-42:19
+21-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:4:4-42:19
 22        android:name="io.flutter.app.FlutterApplication"
-22-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:5:9-57
+22-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:5:9-57
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 23-->[androidx.core:core:1.6.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/ee8ad688a0bb7602014901f970cdd2dc/core-1.6.0/AndroidManifest.xml:24:18-86
 24        android:debuggable="true"
 25        android:icon="@mipmap/ic_launcher"
-25-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:7:9-43
+25-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:7:9-43
 26        android:label="WonderJoys" >
-26-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:6:9-35
+26-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:6:9-35
 27        <activity
-27-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:8:9-36:20
+27-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:8:9-36:20
 28            android:name="com.karim.wonderjoys.MainActivity"
-28-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:9:13-41
+28-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:9:13-41
 29            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-29-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:12:13-163
+29-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:12:13-163
 30            android:hardwareAccelerated="true"
-30-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:13:13-47
+30-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:13:13-47
 31            android:launchMode="singleTop"
-31-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:10:13-43
+31-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:10:13-43
 32            android:theme="@style/LaunchTheme"
-32-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:11:13-47
+32-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:11:13-47
 33            android:windowSoftInputMode="adjustResize" >
-33-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:14:13-55
+33-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:14:13-55
 34
 35            <!--
 36                 Specifies an Android theme to apply to this Activity as soon as
@@ -63,11 +63,11 @@
 39                 to determine the Window background behind the Flutter UI.
 40            -->
 41            <meta-data
-41-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:19:13-22:17
+41-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:19:13-22:17
 42                android:name="io.flutter.embedding.android.NormalTheme"
-42-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:20:15-70
+42-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:20:15-70
 43                android:resource="@style/NormalTheme" />
-43-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:21:15-52
+43-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:21:15-52
 44            <!--
 45                 Displays an Android View that continues showing the launch screen
 46                 Drawable until Flutter paints its first frame, then this splash
@@ -76,21 +76,21 @@
 49                 Flutter's first frame.
 50            -->
 51            <meta-data
-51-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:28:13-31:17
+51-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:28:13-31:17
 52                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-52-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:29:15-79
+52-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:29:15-79
 53                android:resource="@drawable/launch_background" />
-53-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:30:15-61
+53-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:30:15-61
 54
 55            <intent-filter>
-55-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:32:13-35:29
+55-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:32:13-35:29
 56                <action android:name="android.intent.action.MAIN" />
-56-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:33:17-68
-56-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:33:25-66
+56-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:33:17-68
+56-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:33:25-66
 57
 58                <category android:name="android.intent.category.LAUNCHER" />
-58-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:34:17-76
-58-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:34:27-74
+58-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:34:17-76
+58-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:34:27-74
 59            </intent-filter>
 60        </activity>
 61        <!--
@@ -98,44 +98,44 @@
 63             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 64        -->
 65        <meta-data
-65-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:39:9-41:33
+65-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:39:9-41:33
 66            android:name="flutterEmbedding"
-66-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:40:13-44
+66-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:40:13-44
 67            android:value="2" />
-67-->/Users/krym/Downloads/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:41:13-30
+67-->/Users/krym/Documents/WONDERJOYS_M/android/app/src/main/AndroidManifest.xml:41:13-30
 68
 69        <service
-69-->[:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+69-->[:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 70            android:name="com.google.firebase.components.ComponentDiscoveryService"
-70-->[:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+70-->[:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 71            android:directBootAware="true"
 71-->[com.google.firebase:firebase-common:19.5.0] /Users/krym/.gradle/caches/transforms-2/files-2.1/4885080cf66f427eb42504bf476224da/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
 72            android:exported="false" >
 72-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:76:13-37
 73            <meta-data
-73-->[:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+73-->[:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 74                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-74-->[:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+74-->[:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[:firebase_auth] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+75-->[:firebase_auth] /Users/krym/Documents/WONDERJOYS_M/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 76            <meta-data
-76-->[:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+76-->[:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
-77-->[:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+77-->[:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
 78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[:firebase_storage] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+78-->[:firebase_storage] /Users/krym/Documents/WONDERJOYS_M/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 79            <meta-data
-79-->[:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+79-->[:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 80                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-80-->[:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+80-->[:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
 81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[:cloud_firestore] /Users/krym/Downloads/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+81-->[:cloud_firestore] /Users/krym/Documents/WONDERJOYS_M/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 82            <meta-data
-82-->[:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+82-->[:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 83                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-83-->[:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+83-->[:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
 84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[:firebase_core] /Users/krym/Downloads/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+84-->[:firebase_core] /Users/krym/Documents/WONDERJOYS_M/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 85            <meta-data
 85-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:77:13-79:85
 86                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -179,31 +179,31 @@
 107        </service>
 108
 109        <provider
-109-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+109-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
 110            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-110-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+110-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
 111            android:authorities="com.karim.wonderjoys.flutter.image_provider"
-111-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+111-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
 112            android:exported="false"
-112-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+112-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
 113            android:grantUriPermissions="true" >
-113-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+113-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
 114            <meta-data
-114-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+114-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
 115                android:name="android.support.FILE_PROVIDER_PATHS"
-115-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+115-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
 116                android:resource="@xml/flutter_image_picker_file_paths" />
-116-->[:image_picker] /Users/krym/Downloads/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+116-->[:image_picker] /Users/krym/Documents/WONDERJOYS_M/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
 117        </provider>
 118
 119        <activity
-119-->[:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+119-->[:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
 120            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-120-->[:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+120-->[:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 121            android:exported="false"
-121-->[:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+121-->[:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
 122            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-122-->[:url_launcher] /Users/krym/Downloads/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+122-->[:url_launcher] /Users/krym/Documents/WONDERJOYS_M/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
 123        <activity
 123-->[com.google.firebase:firebase-auth:20.0.4] /Users/krym/.gradle/caches/transforms-2/files-2.1/f00dcbac210831d5d5bfcaadb5179f9d/jetified-firebase-auth-20.0.4/AndroidManifest.xml:27:9-44:20
 124            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
