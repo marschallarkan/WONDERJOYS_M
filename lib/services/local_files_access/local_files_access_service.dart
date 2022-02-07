@@ -15,23 +15,23 @@ Future<String> choseImageFromLocalFiles(
       await Permission.photos.request();
   if (!photoPermissionStatus.isGranted) {
     throw LocalFileHandlingStorageReadPermissionDeniedException(
-        message: "Autorizzazione richiesta per leggere l'archiviazione, si prega di dare il permesso");
+        message: "Permission required to read storage, please give permission");
   }
 
   final imgPicker = ImagePicker();
   final imgSource = await showDialog(
     builder: (context) {
       return AlertDialog(
-        title: Text("Scegli l'origine dell'immagine"),
+        title: Text("Chose image source"),
         actions: [
           FlatButton(
-            child: Text("Telecamera"),
+            child: Text("Camera"),
             onPressed: () {
               Navigator.pop(context, ImageSource.camera);
             },
           ),
           FlatButton(
-            child: Text("Galleria"),
+            child: Text("Gallery"),
             onPressed: () {
               Navigator.pop(context, ImageSource.gallery);
             },
@@ -43,7 +43,7 @@ Future<String> choseImageFromLocalFiles(
   );
   if (imgSource == null)
     throw LocalImagePickingInvalidImageException(
-        message: "Nessuna sorgente immagine selezionata");
+        message: "No image source selected");
   final PickedFile imagePicked = await imgPicker.getImage(source: imgSource);
   if (imagePicked == null) {
     throw LocalImagePickingInvalidImageException();
@@ -52,7 +52,7 @@ Future<String> choseImageFromLocalFiles(
     if (fileLength > (maxSizeInKB * 1024) ||
         fileLength < (minSizeInKB * 1024)) {
       throw LocalImagePickingFileSizeOutOfBoundsException(
-          message: "La dimensione dell'immagine non deve superare 1 MB");
+          message: "Image size should not exceed 1MB");
     } else {
       return imagePicked.path;
     }

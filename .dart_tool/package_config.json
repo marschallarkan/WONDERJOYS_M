@@ -158,12 +158,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "flutter_credit_card",
-      "rootUri": "file:///Users/krym/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_credit_card-3.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "flutter_launcher_icons",
       "rootUri": "file:///Users/krym/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.8.1",
       "packageUri": "lib/",
@@ -332,6 +326,12 @@
       "languageVersion": "2.1"
     },
     {
+      "name": "progress_dialog",
+      "rootUri": "file:///Users/krym/flutter/.pub-cache/hosted/pub.dartlang.org/progress_dialog-1.2.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
       "name": "provider",
       "rootUri": "file:///Users/krym/flutter/.pub-cache/hosted/pub.dartlang.org/provider-4.3.3",
       "packageUri": "lib/",
@@ -476,7 +476,7 @@
       "languageVersion": "2.10"
     }
   ],
-  "generated": "2022-01-15T00:22:57.199125Z",
+  "generated": "2022-02-07T01:43:25.025220Z",
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }

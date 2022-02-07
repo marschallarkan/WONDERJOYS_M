@@ -11,7 +11,7 @@ import 'package:wonderjoys/services/database/product_database_helper.dart';
 import 'package:wonderjoys/size_config.dart';
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:logger/logger.dart';
 
 class Body extends StatefulWidget {
@@ -218,7 +218,8 @@ class _BodyState extends State<Body> {
         physics: BouncingScrollPhysics(),
         itemCount: productsId.length,
         shrinkWrap: true,
-        itemBuilder: (context, index) {
+        itemBuilder: (context, int index) {
+          assert(index != null);
           return ProductCard(
             productId: productsId[index],
             press: () {

@@ -2,8 +2,6 @@ import 'package:wonderjoys/constants.dart';
 import 'package:wonderjoys/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:wonderjoys/constants.dart';
-import 'package:wonderjoys/size_config.dart';
 
 class NothingToShowContainer extends StatelessWidget {
   final String iconPath;
@@ -19,14 +17,14 @@ class NothingToShowContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: SizeConfig.screenWidth * 0.50,
+      width: SizeConfig.screenWidth * 0.75,
       height: SizeConfig.screenHeight * 0.2,
       child: Column(
         children: [
           SvgPicture.asset(
             iconPath,
             color: kTextColor,
-            width: getProportionateScreenWidth(50),
+            width: getProportionateScreenWidth(75),
           ),
           SizedBox(height: 16),
           Text(

@@ -1,6 +1,5 @@
 import 'package:wonderjoys/size_config.dart';
 import 'package:flutter/material.dart';
-import 'package:wonderjoys/size_config.dart';
 
 class TopRoundedContainer extends StatelessWidget {
   final Color color;

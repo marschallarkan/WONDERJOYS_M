@@ -1,12 +1,23 @@
+// ignore_for_file: must_be_immutable
+
+
 import 'package:wonderjoys/components/default_button.dart';
+
+
 import 'package:wonderjoys/services/database/user_database_helper.dart';
 import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
 
+
 class CheckoutCard extends StatelessWidget {
   final VoidCallback onCheckoutPressed;
-  const CheckoutCard({
+
+
+  String status;
+  String amount;
+  bool success= false;
+  CheckoutCard({
     Key key,
     @required this.onCheckoutPressed,
   }) : super(key: key);
@@ -40,40 +51,67 @@ class CheckoutCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                FutureBuilder<num>(
-                  future: UserDatabaseHelper().cartTotal,
-                  builder: (context, snapshot) {
-                    if (snapshot.hasData) {
-                      final cartTotal = snapshot.data;
-                      return Text.rich(
-                        TextSpan(text: "Totale\n", children: [
-                          TextSpan(
-                            text: "\€ $cartTotal",
-                            style: TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w700,
+
+                Container(
+                  child: FutureBuilder<num>(
+                    future: UserDatabaseHelper().cartTotal,
+                    builder: (context, snapshot) {
+                      if (snapshot.hasData) {
+                        final cartTotal = snapshot.data;
+                        return Text.rich(
+                          TextSpan(text: "Totale\n", children: [
+                            TextSpan(
+                              text: "\€ $cartTotal",
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700,
+                              ),
                             ),
-                          ),
-                        ]),
-                      );
-                    }
-                    return Center(child: CircularProgressIndicator());
-                  },
+                          ]),
+                        );
+                      }
+
+                      return Center(child: CircularProgressIndicator());
+                    },
+                  ),
                 ),
                 SizedBox(
                   width: getProportionateScreenWidth(190),
                   child: DefaultButton(
-                    text: "La Cassa",
-                    press: onCheckoutPressed,
-                  ),
-                ),
+                  text: "La Cassa",
+                  press: onCheckoutPressed,),
+                    ),
+                    // EasyLoading.show(status: 'Please wait ...'),
+
+                    ],
+                    ),
+                    SizedBox(height: getProportionateScreenHeight(20)),
+
+
+
               ],
+
             ),
-            SizedBox(height: getProportionateScreenHeight(20)),
-          ],
-        ),
-      ),
-    );
+             ),
+        );
+
+
   }
+  filterOrder(status){
+    this.status = status;
+    notifyListeners();
+  }
+
+  totalAmount(amount){
+    this.amount = amount.toStringAsFixed(0);
+    notifyListeners();
+  }
+
+  paymentStatus(success){
+    this.success = success;
+    notifyListeners();
+  }
+
+  void notifyListeners() {}
 }

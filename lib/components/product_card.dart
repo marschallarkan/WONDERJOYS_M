@@ -2,8 +2,6 @@ import 'package:wonderjoys/services/database/product_database_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:logger/logger.dart';
-import 'package:wonderjoys/models/Product.dart';
-import 'package:wonderjoys/services/database/product_database_helper.dart';
 import '../constants.dart';
 import 'package:wonderjoys/models/Product.dart';
 
@@ -101,7 +99,7 @@ class ProductCard extends StatelessWidget {
                       flex: 5,
                       child: Text.rich(
                         TextSpan(
-                          text: "\€${product.discountPrice}\n",
+                          text: "\₹${product.discountPrice}\n",
                           style: TextStyle(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w700,
@@ -109,7 +107,7 @@ class ProductCard extends StatelessWidget {
                           ),
                           children: [
                             TextSpan(
-                              text: "\€${product.originalPrice}",
+                              text: "\₹${product.originalPrice}",
                               style: TextStyle(
                                 color: kTextColor,
                                 decoration: TextDecoration.lineThrough,

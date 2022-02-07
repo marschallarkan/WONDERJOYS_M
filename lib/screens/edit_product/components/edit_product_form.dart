@@ -1,6 +1,8 @@
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:wonderjoys/components/async_progress_dialog.dart';
+
 import 'package:wonderjoys/components/default_button.dart';
 import 'package:wonderjoys/exceptions/local_files_handling/image_picking_exceptions.dart';
 import 'package:wonderjoys/exceptions/local_files_handling/local_file_handling_exception.dart';
@@ -12,7 +14,7 @@ import 'package:wonderjoys/services/local_files_access/local_files_access_servic
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tags/flutter_tags.dart';
-import 'package:future_progress_dialog/future_progress_dialog.dart';
+
 import 'package:logger/logger.dart';
 import 'package:provider/provider.dart';
 
@@ -97,7 +99,7 @@ class _EditProductFormState extends State<EditProductForm> {
         buildProductSearchTagsTile(),
         SizedBox(height: getProportionateScreenHeight(80)),
         DefaultButton(
-            text: "Salva prodotto",
+            text: "Save Product",
             press: () {
               saveProductButtonCallback(context);
             }),
@@ -127,7 +129,7 @@ class _EditProductFormState extends State<EditProductForm> {
             lowerCase: true,
             width: getProportionateScreenWidth(120),
             constraintSuggestion: true,
-            hintText: "Aggiungi tag di ricerca",
+            hintText: "Add search tag",
             keyboardType: TextInputType.name,
             onSubmitted: (String str) {
               productDetails.addSearchTag(str.toLowerCase());
@@ -167,7 +169,7 @@ class _EditProductFormState extends State<EditProductForm> {
       child: ExpansionTile(
         maintainState: true,
         title: Text(
-          "Dettagli di base",
+          "Basic Details",
           style: Theme.of(context).textTheme.headline6,
         ),
         leading: Icon(
@@ -210,7 +212,7 @@ class _EditProductFormState extends State<EditProductForm> {
       child: ExpansionTile(
         maintainState: true,
         title: Text(
-          "Descrivi il prodotto",
+          "Describe Product",
           style: Theme.of(context).textTheme.headline6,
         ),
         leading: Icon(
@@ -263,7 +265,7 @@ class _EditProductFormState extends State<EditProductForm> {
                 )
                 .toList(),
             hint: Text(
-              "Scegli il Tipo di Prodotto",
+              "Chose Product Type",
             ),
             style: TextStyle(
               color: kTextColor,
@@ -283,14 +285,14 @@ class _EditProductFormState extends State<EditProductForm> {
   Widget buildProductSearchTagsTile() {
     return ExpansionTile(
       title: Text(
-        "Tag di Ricerca",
+        "Search Tags",
         style: Theme.of(context).textTheme.headline6,
       ),
       leading: Icon(Icons.check_circle_sharp),
       childrenPadding:
           EdgeInsets.symmetric(vertical: getProportionateScreenHeight(20)),
       children: [
-        Text("Il tuo Prodotto verrà Cercato per Questo Tag"),
+        Text("Your product will be searched for this Tags"),
         SizedBox(height: getProportionateScreenHeight(15)),
         buildProductSearchTags(),
       ],
@@ -300,7 +302,7 @@ class _EditProductFormState extends State<EditProductForm> {
   Widget buildUploadImagesTile(BuildContext context) {
     return ExpansionTile(
       title: Text(
-        "Carica Immagini",
+        "Upload Images",
         style: Theme.of(context).textTheme.headline6,
       ),
       leading: Icon(Icons.image),
@@ -359,7 +361,7 @@ class _EditProductFormState extends State<EditProductForm> {
       keyboardType: TextInputType.name,
       decoration: InputDecoration(
         hintText: "e.g., Samsung Galaxy F41 Mobile",
-        labelText: "Titolo del Prodotto",
+        labelText: "Product Title",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
       validator: (_) {
@@ -378,7 +380,7 @@ class _EditProductFormState extends State<EditProductForm> {
       keyboardType: TextInputType.name,
       decoration: InputDecoration(
         hintText: "e.g., Fusion Green",
-        labelText: "Variante",
+        labelText: "Variant",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
       validator: (_) {
@@ -398,7 +400,7 @@ class _EditProductFormState extends State<EditProductForm> {
       decoration: InputDecoration(
         hintText:
             "e.g., RAM: 4GB | Front Camera: 30MP | Rear Camera: Quad Camera Setup",
-        labelText: "Punti salienti",
+        labelText: "Highlights",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
       validator: (_) {
@@ -418,8 +420,8 @@ class _EditProductFormState extends State<EditProductForm> {
       keyboardType: TextInputType.multiline,
       decoration: InputDecoration(
         hintText:
-            "e.g., Questo è un telefono di punta prodotto in India da Samsung. Con questo dispositivo, Samsung presenta la sua nuova serie F.",
-        labelText: "Descrizione",
+            "e.g., This a flagship phone under made in India, by Samsung. With this device, Samsung introduces its new F Series.",
+        labelText: "Description",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
       validator: (_) {
@@ -439,7 +441,7 @@ class _EditProductFormState extends State<EditProductForm> {
       keyboardType: TextInputType.name,
       decoration: InputDecoration(
         hintText: "e.g., HighTech Traders",
-        labelText: "Venditore",
+        labelText: "Seller",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
       validator: (_) {
@@ -458,7 +460,7 @@ class _EditProductFormState extends State<EditProductForm> {
       keyboardType: TextInputType.number,
       decoration: InputDecoration(
         hintText: "e.g., 5999.0",
-        labelText: "Prezzo originale (in EURO)",
+        labelText: "Original Price (in INR)",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
       validator: (_) {
@@ -477,7 +479,7 @@ class _EditProductFormState extends State<EditProductForm> {
       keyboardType: TextInputType.number,
       decoration: InputDecoration(
         hintText: "e.g., 2499.0",
-        labelText: "Prezzo scontato (in EURO)",
+        labelText: "Discount Price (in INR)",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
       validator: (_) {
@@ -494,7 +496,7 @@ class _EditProductFormState extends State<EditProductForm> {
     if (validateBasicDetailsForm() == false) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text("Errori nel modulo Dettagli di base"),
+          content: Text("Erros in Basic Details Form"),
         ),
       );
       return;
@@ -502,7 +504,7 @@ class _EditProductFormState extends State<EditProductForm> {
     if (validateDescribeProductForm() == false) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text("Errori nel modulo Descrivi prodotto"),
+          content: Text("Errors in Describe Product Form"),
         ),
       );
       return;
@@ -511,7 +513,7 @@ class _EditProductFormState extends State<EditProductForm> {
     if (productDetails.selectedImages.length < 1) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text("Carica almeno un'immagine del prodotto"),
+          content: Text("Upload atleast One Image of Product"),
         ),
       );
       return;
@@ -519,7 +521,7 @@ class _EditProductFormState extends State<EditProductForm> {
     if (productDetails.productType == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text("Seleziona il tipo di prodotto"),
+          content: Text("Please select Product Type"),
         ),
       );
       return;
@@ -527,7 +529,7 @@ class _EditProductFormState extends State<EditProductForm> {
     if (productDetails.searchTags.length < 3) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text("Aggiungi almeno 3 tag di ricerca"),
+          content: Text("Add atleast 3 search tags"),
         ),
       );
       return;
@@ -546,21 +548,21 @@ class _EditProductFormState extends State<EditProductForm> {
       await showDialog(
         context: context,
         builder: (context) {
-          return FutureProgressDialog(
+          return AsyncProgressDialog(
             productUploadFuture,
             message:
-                Text(newProduct ? "Caricamento del Prodotto" : "Caricamento del Prodotto"),
+                Text(newProduct ? "Uploading Product" : "Updating Product"),
           );
         },
       );
       if (productId != null) {
-        snackbarMessage = "Informazioni sul Prodotto Aggiornate con Successo";
+        snackbarMessage = "Product Info updated successfully";
       } else {
-        throw "Impossibile Aggiornare le Informazioni sul Prodotto a causa di un Problema Sconosciuto";
+        throw "Couldn't update product info due to some unknown issue";
       }
     } on FirebaseException catch (e) {
       Logger().w("Firebase Exception: $e");
-      snackbarMessage = "Qualcosa è andato storto";
+      snackbarMessage = "Something went wrong";
     } catch (e) {
       Logger().w("Unknown Exception: $e");
       snackbarMessage = e.toString();
@@ -577,16 +579,16 @@ class _EditProductFormState extends State<EditProductForm> {
     try {
       allImagesUploaded = await uploadProductImages(productId);
       if (allImagesUploaded == true) {
-        snackbarMessage = "Tutte le immagini sono state caricate con successo";
+        snackbarMessage = "All images uploaded successfully";
       } else {
-        throw "Alcune immagini non possono essere caricate, riprova";
+        throw "Some images couldn't be uploaded, please try again";
       }
     } on FirebaseException catch (e) {
       Logger().w("Firebase Exception: $e");
-      snackbarMessage = "Qualcosa è andato storto";
+      snackbarMessage = "Something went wrong";
     } catch (e) {
       Logger().w("Unknown Exception: $e");
-      snackbarMessage = "Qualcosa è andato storto";
+      snackbarMessage = "Something went wrong";
     } finally {
       Logger().i(snackbarMessage);
       ScaffoldMessenger.of(context).showSnackBar(
@@ -605,20 +607,20 @@ class _EditProductFormState extends State<EditProductForm> {
       productFinalizeUpdate = await showDialog(
         context: context,
         builder: (context) {
-          return FutureProgressDialog(
+          return AsyncProgressDialog(
             updateProductFuture,
-            message: Text("Risparmio di prodotto"),
+            message: Text("Saving Product"),
           );
         },
       );
       if (productFinalizeUpdate == true) {
-        snackbarMessage = "Prodotto Caricato con Successo";
+        snackbarMessage = "Product uploaded successfully";
       } else {
-        throw "Impossibile caricare il prodotto correttamente, riprova";
+        throw "Couldn't upload product properly, please retry";
       }
     } on FirebaseException catch (e) {
       Logger().w("Firebase Exception: $e");
-      snackbarMessage = "Qualcosa è andato storto";
+      snackbarMessage = "Something went wrong";
     } catch (e) {
       Logger().w("Unknown Exception: $e");
       snackbarMessage = e.toString();
@@ -638,7 +640,7 @@ class _EditProductFormState extends State<EditProductForm> {
     final productDetails = Provider.of<ProductDetails>(context, listen: false);
     for (int i = 0; i < productDetails.selectedImages.length; i++) {
       if (productDetails.selectedImages[i].imgType == ImageType.local) {
-        print("Immagine in fase di caricamento: " + productDetails.selectedImages[i].path);
+        print("Image being uploaded: " + productDetails.selectedImages[i].path);
         String downloadUrl;
         try {
           final imgUploadFuture = FirestoreFilesAccess().uploadFileToPath(
@@ -647,10 +649,10 @@ class _EditProductFormState extends State<EditProductForm> {
           downloadUrl = await showDialog(
             context: context,
             builder: (context) {
-              return FutureProgressDialog(
+              return AsyncProgressDialog(
                 imgUploadFuture,
                 message: Text(
-                    "Caricamento di immagini ${i + 1}/${productDetails.selectedImages.length}"),
+                    "Uploading Images ${i + 1}/${productDetails.selectedImages.length}"),
               );
             },
           );
@@ -667,7 +669,7 @@ class _EditProductFormState extends State<EditProductForm> {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
                 content:
-                    Text("Impossibile Caricare l'immagine ${i + 1} A Causa di Gualche Problema"),
+                    Text("Couldn't upload image ${i + 1} due to some issue"),
               ),
             );
           }
@@ -681,7 +683,7 @@ class _EditProductFormState extends State<EditProductForm> {
     final productDetails = Provider.of<ProductDetails>(context, listen: false);
     if (index == null && productDetails.selectedImages.length >= 3) {
       ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("È possibile caricare massimo 3 immagini")));
+          SnackBar(content: Text("Max 3 images can be uploaded")));
       return;
     }
     String path;

@@ -49,7 +49,7 @@ class ProductsSection extends StatelessWidget {
   Widget buildProductsList() {
     return StreamBuilder<List<String>>(
       stream: productsStreamController.stream,
-      builder: (context, snapshot) {
+      builder: (BuildContext context, AsyncSnapshot snapshot) {
         if (snapshot.hasData) {
           if (snapshot.data.length == 0) {
             return Center(

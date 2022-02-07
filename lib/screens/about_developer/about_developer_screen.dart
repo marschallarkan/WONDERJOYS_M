@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 import 'components/body.dart';
 
 class AboutDeveloperScreen extends StatelessWidget {
@@ -8,6 +9,7 @@ class AboutDeveloperScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Body(),
+
     );
   }
 }

@@ -2,9 +2,6 @@ import 'package:wonderjoys/screens/sign_up/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:wonderjoys/size_config.dart';
 import 'package:wonderjoys/constants.dart';
-import 'package:wonderjoys/constants.dart';
-import 'package:wonderjoys/screens/sign_up/sign_up_screen.dart';
-import 'package:wonderjoys/size_config.dart';
 
 class NoAccountText extends StatelessWidget {
   const NoAccountText({
@@ -17,7 +14,7 @@ class NoAccountText extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "Non hai un account? ",
+          "Don't have an account? ",
           style: TextStyle(
             fontSize: getProportionateScreenWidth(16),
           ),
@@ -28,7 +25,7 @@ class NoAccountText extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => SignUpScreen()));
           },
           child: Text(
-            "Iscriviti",
+            "Sign Up",
             style: TextStyle(
               fontSize: getProportionateScreenWidth(16),
               color: kPrimaryColor,

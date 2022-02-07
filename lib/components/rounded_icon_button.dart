@@ -1,6 +1,5 @@
 import 'package:wonderjoys/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:wonderjoys/constants.dart';
 
 import '../size_config.dart';
 

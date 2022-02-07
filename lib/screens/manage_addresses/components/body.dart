@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:wonderjoys/components/default_button.dart';
 import 'package:wonderjoys/components/nothingtoshow_container.dart';
 import 'package:wonderjoys/constants.dart';

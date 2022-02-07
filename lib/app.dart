@@ -1,6 +1,6 @@
 import 'package:wonderjoys/wrappers/authentification_wrapper.dart';
 import 'package:flutter/material.dart';
-import 'package:wonderjoys/wrappers/authentification_wrapper.dart';
+
 import 'constants.dart';
 import 'theme.dart';
 
