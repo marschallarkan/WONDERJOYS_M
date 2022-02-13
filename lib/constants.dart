@@ -3,12 +3,12 @@ import 'package:wonderjoys/size_config.dart';
 
 const String appName = "WonderJoyS";
 
-const kPrimaryColor = Color(0xFF1B98F5);
-const kPrimaryLightColor = Color(0xFF5DA3FA);
+const kPrimaryColor = Color(0xFFE03B8B);
+const kPrimaryLightColor = Color(0xFFC7C11A);
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
-  colors: [Color(0xFF1B98F5), Color(0xFF5DA3FA)],
+  colors: [Color(0xFFE03B8B), Color(0xFFC7C11A)],
 );
 const kSecondaryColor = Color(0xFF979797);
 const kTextColor = Color(0xFF757575);

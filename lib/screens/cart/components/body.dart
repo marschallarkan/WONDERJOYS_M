@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:provider/provider.dart';
 import 'package:wonderjoys/components/default_button.dart';
 import 'package:wonderjoys/components/nothingtoshow_container.dart';
 import 'package:wonderjoys/components/product_short_detail_card.dart';
@@ -8,10 +7,8 @@ import 'package:wonderjoys/models/CartItem.dart';
 import 'package:wonderjoys/models/OrderedProduct.dart';
 import 'package:wonderjoys/models/Product.dart';
 import 'package:wonderjoys/screens/cart/components/checkout_card.dart';
-
 import 'package:wonderjoys/screens/product_details/product_details_screen.dart';
 import 'package:wonderjoys/services/data_streams/cart_items_stream.dart';
-
 import 'package:wonderjoys/services/database/product_database_helper.dart';
 import 'package:wonderjoys/services/database/user_database_helper.dart';
 import 'package:wonderjoys/size_config.dart';
@@ -103,7 +100,7 @@ class _BodyState extends State<Body> {
                 text: "Procedere al Pagamento",
                 press: () {
                   bottomSheetHandler = Scaffold.of(context).showBottomSheet(
-                        (context) {
+                    (context) {
                       return CheckoutCard(
                         onCheckoutPressed: checkoutButtonCallback,
                       );
@@ -329,7 +326,7 @@ class _BodyState extends State<Body> {
     return Container(
       padding: EdgeInsets.only(left: 20),
       decoration: BoxDecoration(
-        color: Colors.lightGreenAccent,
+        color: Colors.red,
         borderRadius: BorderRadius.circular(15),
       ),
       child: Row(
@@ -372,13 +369,13 @@ class _BodyState extends State<Body> {
             "${dateTime.day}-${dateTime.month}-${dateTime.year}";
         List<OrderedProduct> orderedProducts = orderedProductsUid
             .map((e) => OrderedProduct(null,
-            productUid: e, orderDate: formatedDateTime))
+                productUid: e, orderDate: formatedDateTime))
             .toList();
         bool addedProductsToMyProducts = false;
         String snackbarmMessage;
         try {
           addedProductsToMyProducts =
-          await UserDatabaseHelper().addToMyOrders(orderedProducts);
+              await UserDatabaseHelper().addToMyOrders(orderedProducts);
           if (addedProductsToMyProducts) {
             snackbarmMessage = "Prodotti ordinati con successo";
           } else {

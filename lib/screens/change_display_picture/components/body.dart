@@ -62,26 +62,28 @@ class Body extends StatelessWidget {
 
   Widget buildDisplayPictureAvatar(
       BuildContext context, ChosenImage bodyState) {
-    return StreamBuilder(
-      stream: UserDatabaseHelper().currentUserDataStream,
-      builder: (context, snapshot) {
-        if (snapshot.hasError) {
-          final error = snapshot.error;
-          Logger().w(error.toString());
-        }
-        ImageProvider backImage;
-        if (bodyState.chosenImage != null) {
-          backImage = MemoryImage(bodyState.chosenImage.readAsBytesSync());
-        } else if (snapshot.hasData && snapshot.data != null) {
-          final String url = snapshot.data.data()[UserDatabaseHelper.DP_KEY];
-          if (url != null) backImage = NetworkImage(url);
-        }
-        return CircleAvatar(
-          radius: SizeConfig.screenWidth * 0.3,
-          backgroundColor: kTextColor.withOpacity(0.5),
-          backgroundImage: backImage ?? null,
-        );
-      },
+    return Container(
+      child: StreamBuilder(
+        stream: UserDatabaseHelper().currentUserDataStream,
+        builder: (context, snapshot) {
+          if (snapshot.hasError) {
+            final error = snapshot.error;
+            Logger().w(error.toString());
+          }
+          ImageProvider backImage;
+          if (bodyState.chosenImage != null) {
+            backImage = MemoryImage(bodyState.chosenImage.readAsBytesSync());
+          } else if (snapshot.hasData && snapshot.data.data != null) {
+            final String url = snapshot.data.data()[UserDatabaseHelper.DP_KEY];
+            if (url != null) backImage = NetworkImage(url);
+          }
+          return CircleAvatar(
+            radius: SizeConfig.screenWidth * 0.3,
+            backgroundColor: kTextColor.withOpacity(0.5),
+            backgroundImage: backImage ?? null,
+          );
+        },
+      ),
     );
   }
 
@@ -220,10 +222,7 @@ class Body extends StatelessWidget {
     } on FirebaseException catch (e) {
       Logger().w("Firebase Exception: $e");
       snackbarMessage = "Qualcosa è andato storto";
-    } catch (e) {
-      Logger().w("Unknown Exception: $e");
-      snackbarMessage = "Qualcosa è andato storto";
-    } finally {
+    }  finally {
       Logger().i(snackbarMessage);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(

@@ -4,7 +4,17 @@
             "outputFile": "/Users/krym/Documents/WONDERJOYS_M/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/d3617fdd8830cb8de70fba9976961d04/appcompat-1.0.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/09c2e8e43f54ed87976a2f18a3763751/core-1.6.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/08798fbbc3ad9e2ee8f8d52f891cc3b4/appcompat-1.0.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/ee8ad688a0bb7602014901f970cdd2dc/core-1.6.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

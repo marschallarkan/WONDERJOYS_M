@@ -5,8 +5,8 @@ import 'package:wonderjoys/services/authentification/authentification_service.da
 import 'package:enum_to_string/enum_to_string.dart';
 
 class ProductDatabaseHelper {
-  static const String PRODUCTS_COLLECTION_NAME = "products";
-  static const String REVIEWS_COLLECTOIN_NAME = "reviews";
+  static const String PRODUCTS_COLLECTION_NAME = "Prodotti";
+  static const String REVIEWS_COLLECTOIN_NAME = "Recensioni";
 
   ProductDatabaseHelper._privateConstructor();
   static ProductDatabaseHelper _instance =

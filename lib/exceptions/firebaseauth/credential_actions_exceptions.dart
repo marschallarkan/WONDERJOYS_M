@@ -1,5 +1,7 @@
 import 'package:wonderjoys/exceptions/firebaseauth/messeged_firebaseauth_exception.dart';
 
+import 'messeged_firebaseauth_exception.dart';
+
 class FirebaseCredentialActionAuthException
     extends MessagedFirebaseAuthException {
   FirebaseCredentialActionAuthException(

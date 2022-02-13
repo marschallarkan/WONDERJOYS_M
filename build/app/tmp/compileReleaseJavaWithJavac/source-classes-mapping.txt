@@ -1,4 +1,4 @@
 io/flutter/plugins/GeneratedPluginRegistrant.java
  io.flutter.plugins.GeneratedPluginRegistrant
-com/mario/wonderjoys/BuildConfig.java
- com.mario.wonderjoys.BuildConfig
+com/arkan/wonderjoys/BuildConfig.java
+ com.arkan.wonderjoys.BuildConfig

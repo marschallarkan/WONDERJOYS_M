@@ -1,85 +1,49 @@
 {
   "project_info": {
-    "project_number": "904846156436",
-    "firebase_url": "https://mario-63adc-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "mario-63adc",
-    "storage_bucket": "mario-63adc.appspot.com"
+    "project_number": "723294808225",
+    "firebase_url": "https://wonderjoys-d934c-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "wonderjoys-d934c",
+    "storage_bucket": "wonderjoys-d934c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:904846156436:android:9edd624cf582a940cb0a81",
+        "mobilesdk_app_id": "1:723294808225:android:7bbb351600f7f3f276e8e0",
         "android_client_info": {
-          "package_name": "com.mario.wonderjoys"
+          "package_name": "com.arkan.wonderjoys"
         }
       },
       "oauth_client": [
         {
-          "client_id": "904846156436-ri5spmuvjbfo3ieih0ianp5r96t0o9f8.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyANGl7Pkb4mz5icH2gjltVitQYhvqN42a8"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "904846156436-ri5spmuvjbfo3ieih0ianp5r96t0o9f8.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "904846156436-fm8r4oegotsv8foenb5jkiscvu1052t9.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.mario.wonderjoys"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:904846156436:android:a6dfa90905ae0395cb0a81",
-        "android_client_info": {
-          "package_name": "com.mario.wonderjoys"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "904846156436-ctlvf7oqet4es8emdf6c07tp4263brpm.apps.googleusercontent.com",
+          "client_id": "723294808225-448e5uggmda118ekjrv7psdp6rm455rb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.mario.wonderjoys",
-            "certificate_hash": "7e94dfc74ea6246289c72aadf1f8b0ec964a349c"
+            "package_name": "com.arkan.wonderjoys",
+            "certificate_hash": "bf3f10335f88ed773d53f7c936fb776620f67174"
           }
         },
         {
-          "client_id": "904846156436-ri5spmuvjbfo3ieih0ianp5r96t0o9f8.apps.googleusercontent.com",
+          "client_id": "723294808225-tg48g6rqsf2qve9g78pr9c7o37827fpj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyANGl7Pkb4mz5icH2gjltVitQYhvqN42a8"
+          "current_key": "AIzaSyCsm0febEAeF22Uy15gP9SWTMq6pkkwgoI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "904846156436-ri5spmuvjbfo3ieih0ianp5r96t0o9f8.apps.googleusercontent.com",
+              "client_id": "723294808225-tg48g6rqsf2qve9g78pr9c7o37827fpj.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "904846156436-fm8r4oegotsv8foenb5jkiscvu1052t9.apps.googleusercontent.com",
+              "client_id": "723294808225-kckpg6uh6bq85gubclmoleeamoe4c9r1.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.mario.wonderjoys"
+                "bundle_id": "com.arkan.wonderjoys"
               }
             }
           ]

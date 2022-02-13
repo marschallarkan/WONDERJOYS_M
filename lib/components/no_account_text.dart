@@ -14,7 +14,7 @@ class NoAccountText extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "Don't have an account? ",
+          "Non hai un account? ",
           style: TextStyle(
             fontSize: getProportionateScreenWidth(16),
           ),
@@ -25,7 +25,7 @@ class NoAccountText extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => SignUpScreen()));
           },
           child: Text(
-            "Sign Up",
+            "Iscriviti",
             style: TextStyle(
               fontSize: getProportionateScreenWidth(16),
               color: kPrimaryColor,

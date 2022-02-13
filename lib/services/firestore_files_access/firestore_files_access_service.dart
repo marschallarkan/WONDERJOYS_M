@@ -32,7 +32,7 @@ class FirestoreFilesAccess {
   }
 
   Future<String> getDeveloperImage() async {
-    const filename = "about_developer/developer";
+    const filename = "sullo sviluppatore / sviluppatore";
     List<String> extensions = <String>["jpg", "jpeg", "jpe", "jfif"];
     final Reference firestorageRef = FirebaseStorage.instance.ref();
     for (final ext in extensions) {
@@ -45,7 +45,7 @@ class FirestoreFilesAccess {
       }
     }
     throw FirebaseException(
-        message: "No JPEG Image found for Developer",
+        message: "Nessuna immagine JPEG trovata per lo sviluppatore",
         plugin: 'Firebase Storage');
   }
 }

@@ -4,7 +4,7 @@
             "outputFile": "/Users/krym/Documents/WONDERJOYS_M/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/d3617fdd8830cb8de70fba9976961d04/appcompat-1.0.0/res/values-v25/values-v25.xml",
+                    "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/08798fbbc3ad9e2ee8f8d52f891cc3b4/appcompat-1.0.0/res/values-v25/values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

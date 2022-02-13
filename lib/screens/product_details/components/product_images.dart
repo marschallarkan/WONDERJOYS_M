@@ -1,9 +1,7 @@
-
-import 'package:pinch_zoom_image_updated/pinch_zoom_image_updated.dart';
 import 'package:wonderjoys/models/Product.dart';
 import 'package:wonderjoys/screens/product_details/provider_models/ProductImageSwiper.dart';
 import 'package:flutter/material.dart';
-
+import 'package:pinch_zoom_image_updated/pinch_zoom_image_updated.dart';
 import 'package:provider/provider.dart';
 import 'package:swipedetector/swipedetector.dart';
 
@@ -87,8 +85,8 @@ class ProductImages extends StatelessWidget {
         margin:
             EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(8)),
         padding: EdgeInsets.all(getProportionateScreenHeight(8)),
-        height: getProportionateScreenWidth(45),
-        width: getProportionateScreenWidth(45),
+        height: getProportionateScreenWidth(48),
+        width: getProportionateScreenWidth(48),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),

@@ -19,30 +19,32 @@ class NothingToShowContainer extends StatelessWidget {
     return SizedBox(
       width: SizeConfig.screenWidth * 0.75,
       height: SizeConfig.screenHeight * 0.2,
-      child: Column(
-        children: [
-          SvgPicture.asset(
-            iconPath,
-            color: kTextColor,
-            width: getProportionateScreenWidth(75),
-          ),
-          SizedBox(height: 16),
-          Text(
-            "$primaryMessage",
-            style: TextStyle(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            SvgPicture.asset(
+              iconPath,
               color: kTextColor,
-              fontSize: 15,
+              width: getProportionateScreenWidth(75),
             ),
-          ),
-          Text(
-            "$secondaryMessage",
-            style: TextStyle(
-              color: kTextColor,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
+            SizedBox(height: 16),
+            Text(
+              "$primaryMessage",
+              style: TextStyle(
+                color: kTextColor,
+                fontSize: 15,
+              ),
             ),
-          ),
-        ],
+            Text(
+              "$secondaryMessage",
+              style: TextStyle(
+                color: kTextColor,
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -4,13 +4,13 @@
     "type": "PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "com.mario.wonderjoys",
+  "applicationId": "com.arkan.wonderjoys",
   "variantName": "processReleaseResources",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
-      "versionCode": 4,
+      "versionCode": 5,
       "versionName": "1.0.0",
       "outputFile": "resources-release.ap_"
     }

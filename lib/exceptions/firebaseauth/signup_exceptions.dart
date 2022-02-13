@@ -1,8 +1,10 @@
 import 'package:wonderjoys/exceptions/firebaseauth/messeged_firebaseauth_exception.dart';
 
+import 'messeged_firebaseauth_exception.dart';
+
 class FirebaseSignUpAuthException extends MessagedFirebaseAuthException {
   FirebaseSignUpAuthException(
-      {String message: "Instance of FirebaseSignUpAuthException"})
+      {String message: "Istanza di Firebase SignUp AuthException"})
       : super(message);
 }
 

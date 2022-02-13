@@ -1,35 +1,37 @@
 import 'package:wonderjoys/exceptions/local_files_handling/local_file_handling_exception.dart';
 
+import 'local_file_handling_exception.dart';
+
 class LocalImagePickingException extends LocalFileHandlingException {
   LocalImagePickingException(
-      {String message = "Instance of ImagePickingException"})
+      {String message = "Istanza dell'eccezione ImagePicker"})
       : super(message);
 }
 
 class LocalImagePickingInvalidImageException
     extends LocalImagePickingException {
   LocalImagePickingInvalidImageException(
-      {String message = "Image chosen is invalid"})
+      {String message = "L'immagine scelta non è valida"})
       : super(message: message);
 }
 
 class LocalImagePickingFileSizeOutOfBoundsException
     extends LocalImagePickingException {
   LocalImagePickingFileSizeOutOfBoundsException(
-      {String message = "Image size not in given range"})
+      {String message = "Dimensioni dell'immagine non comprese nell'intervallo specificato"})
       : super(message: message);
 }
 
 class LocalImagePickingInvalidImageSourceException
     extends LocalImagePickingException {
   LocalImagePickingInvalidImageSourceException(
-      {String message = "Image source is invalid"})
+      {String message = "La fonte dell'immagine non è valida"})
       : super(message: message);
 }
 
 class LocalImagePickingUnknownReasonFailureException
     extends LocalImagePickingException {
   LocalImagePickingUnknownReasonFailureException(
-      {String message = "Failed due to unknown reason"})
+      {String message = "Fallito per motivo sconosciuto"})
       : super(message: message);
 }

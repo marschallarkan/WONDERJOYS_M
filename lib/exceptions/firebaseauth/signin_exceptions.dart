@@ -1,5 +1,7 @@
 import 'package:wonderjoys/exceptions/firebaseauth/messeged_firebaseauth_exception.dart';
 
+import 'messeged_firebaseauth_exception.dart';
+
 class FirebaseSignInAuthException extends MessagedFirebaseAuthException {
   FirebaseSignInAuthException(
       {String message: "Instance of FirebaseSignInAuthException"})
@@ -30,12 +32,6 @@ class FirebaseSignInAuthInvalidEmailException
 class FirebaseSignInAuthWrongPasswordException
     extends FirebaseSignInAuthException {
   FirebaseSignInAuthWrongPasswordException({String message = "Wrong password"})
-      : super(message: message);
-}
-
-class FirebaseTooManyRequestsException extends FirebaseSignInAuthException {
-  FirebaseTooManyRequestsException(
-      {String message = "Server busy, Please try again after some time."})
       : super(message: message);
 }
 

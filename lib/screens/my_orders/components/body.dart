@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:wonderjoys/components/nothingtoshow_container.dart';
 import 'package:wonderjoys/components/product_short_detail_card.dart';
 import 'package:wonderjoys/constants.dart';
@@ -302,8 +300,5 @@ class _BodyState extends State<Body> {
         );
       },
     );
-
   }
-
-
 }

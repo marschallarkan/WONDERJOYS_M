@@ -10,24 +10,23 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 
 class AuthentificationService {
-  static const String USER_NOT_FOUND_EXCEPTION_CODE = "user-not-found";
-  static const String WRONG_PASSWORD_EXCEPTION_CODE = "wrong-password";
-  static const String TOO_MANY_REQUESTS_EXCEPTION_CODE = 'too-many-requests';
+  static const String USER_NOT_FOUND_EXCEPTION_CODE = "Utente Non Trovato";
+  static const String WRONG_PASSWORD_EXCEPTION_CODE = "Password Errata";
   static const String EMAIL_ALREADY_IN_USE_EXCEPTION_CODE =
-      "email-already-in-use";
+      "Email già in uso";
   static const String OPERATION_NOT_ALLOWED_EXCEPTION_CODE =
-      "operation-not-allowed";
-  static const String WEAK_PASSWORD_EXCEPTION_CODE = "weak-password";
-  static const String USER_MISMATCH_EXCEPTION_CODE = "user-mismatch";
-  static const String INVALID_CREDENTIALS_EXCEPTION_CODE = "invalid-credential";
-  static const String INVALID_EMAIL_EXCEPTION_CODE = "invalid-email";
-  static const String USER_DISABLED_EXCEPTION_CODE = "user-disabled";
+      "Operazione Non Consentita";
+  static const String WEAK_PASSWORD_EXCEPTION_CODE = "Password Debole";
+  static const String USER_MISMATCH_EXCEPTION_CODE = "mancata corrispondenza dell'utente";
+  static const String INVALID_CREDENTIALS_EXCEPTION_CODE = "credenziali-non-valide";
+  static const String INVALID_EMAIL_EXCEPTION_CODE = "e-mail non valido";
+  static const String USER_DISABLED_EXCEPTION_CODE = "disabilitato dall'utente";
   static const String INVALID_VERIFICATION_CODE_EXCEPTION_CODE =
-      "invalid-verification-code";
+      "Codice di verifica non valido";
   static const String INVALID_VERIFICATION_ID_EXCEPTION_CODE =
-      "invalid-verification-id";
+      "ID-verifica-non-valido";
   static const String REQUIRES_RECENT_LOGIN_EXCEPTION_CODE =
-      "requires-recent-login";
+      "richiede-login-recente";
 
   FirebaseAuth _firebaseAuth;
 
@@ -99,9 +98,6 @@ class AuthentificationService {
 
         case WRONG_PASSWORD_EXCEPTION_CODE:
           throw FirebaseSignInAuthWrongPasswordException();
-
-        case TOO_MANY_REQUESTS_EXCEPTION_CODE:
-          throw FirebaseTooManyRequestsException();
 
         default:
           throw FirebaseSignInAuthException(message: e.code);

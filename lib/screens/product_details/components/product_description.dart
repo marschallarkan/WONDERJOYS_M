@@ -30,7 +30,7 @@ class ProductDescription extends StatelessWidget {
                   ),
                   children: [
                     TextSpan(
-                      text: "\n${product.variant} ",
+                      text: "\€${product.variant} ",
                       style: TextStyle(
                         fontWeight: FontWeight.normal,
                         fontSize: 15,

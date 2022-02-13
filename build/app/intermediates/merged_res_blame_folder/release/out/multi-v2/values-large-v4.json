@@ -4,7 +4,7 @@
             "outputFile": "/Users/krym/Documents/WONDERJOYS_M/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/d3617fdd8830cb8de70fba9976961d04/appcompat-1.0.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/08798fbbc3ad9e2ee8f8d52f891cc3b4/appcompat-1.0.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/25e6ef29fc4703766083b03c768dbc7f/material-1.0.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "/Users/krym/.gradle/caches/transforms-2/files-2.1/c4e250b82a4224bb132447e10a8a83bb/material-1.0.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
