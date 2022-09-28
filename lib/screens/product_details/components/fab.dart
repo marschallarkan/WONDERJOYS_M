@@ -9,11 +9,11 @@ import '../../../utils.dart';
 
 class AddToCartFAB extends StatelessWidget {
   const AddToCartFAB({
-    Key key,
+    Key? key,
     @required this.productId,
   }) : super(key: key);
 
-  final String productId;
+  final String? productId;
 
   @override
   Widget build(BuildContext context) {
@@ -40,11 +40,11 @@ class AddToCartFAB extends StatelessWidget {
           }
           return;
         }
-        bool addedSuccessfully = false;
-        String snackbarMessage;
+        bool? addedSuccessfully = false;
+        String? snackbarMessage;
         try {
           addedSuccessfully =
-              await UserDatabaseHelper().addProductToCart(productId);
+              await UserDatabaseHelper().addProductToCart(productId!);
           if (addedSuccessfully == true) {
             snackbarMessage = "Prodotto aggiunto con successo";
           } else {
@@ -60,7 +60,7 @@ class AddToCartFAB extends StatelessWidget {
           Logger().i(snackbarMessage);
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text(snackbarMessage),
+              content: Text(snackbarMessage!),
             ),
           );
         }

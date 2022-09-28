@@ -6,15 +6,15 @@ import 'package:wonderjoys/size_config.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatelessWidget {
-  final String searchQuery;
-  final List<String> searchResultProductsId;
-  final String searchIn;
+  final String? searchQuery;
+  final List<String>? searchResultProductsId;
+  final String? searchIn;
 
   const Body({
-    Key key,
-    @required this.searchQuery,
-    @required this.searchResultProductsId,
-    @required this.searchIn,
+    Key? key,
+     this.searchQuery,
+     this.searchResultProductsId,
+     this.searchIn,
   }) : super(key: key);
 
   @override
@@ -61,7 +61,7 @@ class Body extends StatelessWidget {
                 ),
                 SizedBox(height: getProportionateScreenHeight(30)),
                 SizedBox(
-                  height: SizeConfig.screenHeight * 0.75,
+                  height: SizeConfig.screenHeight! * 0.75,
                   child: buildProductsGrid(),
                 ),
                 SizedBox(height: getProportionateScreenHeight(30)),
@@ -85,7 +85,7 @@ class Body extends StatelessWidget {
       ),
       child: Builder(
         builder: (context) {
-          if (searchResultProductsId.length > 0) {
+          if (searchResultProductsId!.length > 0) {
             return GridView.builder(
               shrinkWrap: true,
               physics: BouncingScrollPhysics(),
@@ -95,16 +95,16 @@ class Body extends StatelessWidget {
                 crossAxisSpacing: 4,
                 mainAxisSpacing: 4,
               ),
-              itemCount: searchResultProductsId.length,
+              itemCount: searchResultProductsId!.length,
               itemBuilder: (context, index) {
                 return ProductCard(
-                  productId: searchResultProductsId[index],
+                  productId: searchResultProductsId![index],
                   press: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => ProductDetailsScreen(
-                          productId: searchResultProductsId[index],
+                          productId: searchResultProductsId![index],
                         ),
                       ),
                     );

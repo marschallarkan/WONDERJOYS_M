@@ -12,11 +12,11 @@ import 'review_box.dart';
 
 class ProductReviewsSection extends StatelessWidget {
   const ProductReviewsSection({
-    Key key,
-    @required this.product,
+    Key? key,
+     this.product,
   }) : super(key: key);
 
-  final Product product;
+  final Product? product;
 
   @override
   Widget build(BuildContext context) {
@@ -39,11 +39,11 @@ class ProductReviewsSection extends StatelessWidget {
                 Expanded(
                   child: StreamBuilder<List<Review>>(
                     stream: ProductDatabaseHelper()
-                        .getAllReviewsStreamForProductId(product.id),
+                        .getAllReviewsStreamForProductId(product!.id),
                     builder: (context, snapshot) {
                       if (snapshot.hasData) {
                         final reviewsList = snapshot.data;
-                        if (reviewsList.length == 0) {
+                        if (reviewsList!.length == 0) {
                           return Center(
                             child: Column(
                               children: [
@@ -96,7 +96,7 @@ class ProductReviewsSection extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.topCenter,
-            child: buildProductRatingWidget(product.rating),
+            child: buildProductRatingWidget(product!.rating!),
           ),
         ],
       ),

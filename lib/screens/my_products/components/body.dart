@@ -57,8 +57,8 @@ class _BodyState extends State<Body> {
                   ),
                   SizedBox(height: getProportionateScreenHeight(30)),
                   SizedBox(
-                    height: SizeConfig.screenHeight * 0.7,
-                    child: StreamBuilder<List<String>>(
+                    height: SizeConfig.screenHeight! * 0.7,
+                    child: StreamBuilder<dynamic>(
                       stream: usersProductsStream.stream,
                       builder: (context, snapshot) {
                         if (snapshot.hasData) {
@@ -120,7 +120,7 @@ class _BodyState extends State<Body> {
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             final product = snapshot.data;
-            return buildProductDismissible(product);
+            return buildProductDismissible(product!);
           } else if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(child: CircularProgressIndicator());
           } else if (snapshot.hasError) {
@@ -167,7 +167,7 @@ class _BodyState extends State<Body> {
           final confirmation = await showConfirmationDialog(
               context, "Sei Sicuro di Eliminare il Prodotto?");
           if (confirmation) {
-            for (int i = 0; i < product.images.length; i++) {
+            for (int i = 0; i < product.images!.length; i++) {
               String path =
                   ProductDatabaseHelper().getPathForProductImage(product.id, i);
               final deletionFuture =
@@ -178,14 +178,14 @@ class _BodyState extends State<Body> {
                   return FutureProgressDialog(
                     deletionFuture,
                     message: Text(
-                        "Eliminazione delle Immagini del Prodotto ${i + 1}/${product.images.length}"),
+                        "Eliminazione delle Immagini del Prodotto ${i + 1}/${product.images!.length}"),
                   );
                 },
               );
             }
 
-            bool productInfoDeleted = false;
-            String snackbarMessage;
+            bool? productInfoDeleted = false;
+            String? snackbarMessage;
             try {
               final deleteProductFuture =
                   ProductDatabaseHelper().deleteUserProduct(product.id);
@@ -213,7 +213,7 @@ class _BodyState extends State<Body> {
               Logger().i(snackbarMessage);
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text(snackbarMessage),
+                  content: Text(snackbarMessage!),
                 ),
               );
             }

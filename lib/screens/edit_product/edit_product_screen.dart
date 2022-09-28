@@ -5,9 +5,9 @@ import 'package:provider/provider.dart';
 import 'components/body.dart';
 
 class EditProductScreen extends StatelessWidget {
-  final Product productToEdit;
+  final Product? productToEdit;
 
-  const EditProductScreen({Key key, this.productToEdit}) : super(key: key);
+  const EditProductScreen({Key? key, this.productToEdit}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
@@ -15,7 +15,7 @@ class EditProductScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(),
         body: Body(
-          productToEdit: productToEdit,
+          productToEdit: productToEdit!,
         ),
       ),
     );

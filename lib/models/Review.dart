@@ -5,9 +5,9 @@ class Review extends Model {
   static const String RATING_KEY = "rating";
   static const String FEEDBACK_KEY = "review";
 
-  String reviewerUid;
-  int rating;
-  String feedback;
+  String? reviewerUid;
+  int? rating;
+  String? feedback;
   Review(
     String id, {
     this.reviewerUid,
@@ -15,9 +15,9 @@ class Review extends Model {
     this.feedback,
   }) : super(id);
 
-  factory Review.fromMap(Map<String, dynamic> map, {String id}) {
+  factory Review.fromMap(Map<String, dynamic> map, {String? id}) {
     return Review(
-      id,
+      id!,
       reviewerUid: map[REVIEWER_UID_KEY],
       rating: map[RATING_KEY],
       feedback: map[FEEDBACK_KEY],

@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import '../../../size_config.dart';
 
 class SectionTile extends StatelessWidget {
-  final String title;
-  final GestureTapCallback press;
+  final String? title;
+  final GestureTapCallback? press;
   const SectionTile({
-    Key key,
-    @required this.title,
-    @required this.press,
+    Key? key,
+     this.title,
+     this.press,
   }) : super(key: key);
 
   @override
@@ -16,7 +16,7 @@ class SectionTile extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: Text(
-        title,
+        title!,
         style: TextStyle(
           color: Colors.black,
           fontSize: getProportionateScreenWidth(21),

@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import '../../../components/icon_button_with_counter.dart';
 
 class HomeHeader extends StatelessWidget {
-  final Function onSearchSubmitted;
-  final Function onCartButtonPressed;
-  const HomeHeader({
-    Key key,
+  void Function(String)? onSearchSubmitted;
+  void Function()? onCartButtonPressed;
+   HomeHeader({
+    Key? key,
     @required this.onSearchSubmitted,
     @required this.onCartButtonPressed,
   }) : super(key: key);

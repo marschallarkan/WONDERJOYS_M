@@ -7,9 +7,9 @@ enum ImageType {
 }
 
 class CustomImage {
-  final ImageType imgType;
-  final String path;
-  CustomImage({this.imgType = ImageType.local, @required this.path});
+  final ImageType? imgType;
+  final String? path;
+  CustomImage({this.imgType = ImageType.local,  this.path});
   @override
   String toString() {
     return "Istanza dell'immagine personalizzata: {imgType: $imgType, path: $path}";
@@ -17,9 +17,9 @@ class CustomImage {
 }
 
 class ProductDetails extends ChangeNotifier {
-  List<CustomImage> _selectedImages = List<CustomImage>();
-  ProductType _productType;
-  List<String> _searchTags = List<String>();
+  List<CustomImage> _selectedImages = <CustomImage>[];
+  ProductType? _productType;
+  List<String> _searchTags = <String>[];
 
   List<CustomImage> get selectedImages {
     return _selectedImages;
@@ -29,8 +29,8 @@ class ProductDetails extends ChangeNotifier {
     _selectedImages = images;
   }
 
-  set selectedImages(List<CustomImage> images) {
-    _selectedImages = images;
+  set selectedImages(List<CustomImage>? images) {
+    _selectedImages = images!;
     notifyListeners();
   }
 
@@ -47,7 +47,7 @@ class ProductDetails extends ChangeNotifier {
   }
 
   ProductType get productType {
-    return _productType;
+    return _productType!;
   }
 
   set initialProductType(ProductType type) {
@@ -77,7 +77,7 @@ class ProductDetails extends ChangeNotifier {
     notifyListeners();
   }
 
-  void removeSearchTag({int index}) {
+  void removeSearchTag({int? index}) {
     if (index == null)
       _searchTags.removeLast();
     else

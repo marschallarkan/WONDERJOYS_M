@@ -9,7 +9,7 @@ import '../../../size_config.dart';
 
 class ChangePhoneNumberForm extends StatefulWidget {
   const ChangePhoneNumberForm({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -36,11 +36,11 @@ class _ChangePhoneNumberFormState extends State<ChangePhoneNumberForm> {
       key: _formKey,
       child: Column(
         children: [
-          SizedBox(height: SizeConfig.screenHeight * 0.1),
+          SizedBox(height: SizeConfig.screenHeight! * 0.1),
           buildCurrentPhoneNumberField(),
-          SizedBox(height: SizeConfig.screenHeight * 0.05),
+          SizedBox(height: SizeConfig.screenHeight !* 0.05),
           buildNewPhoneNumberField(),
-          SizedBox(height: SizeConfig.screenHeight * 0.2),
+          SizedBox(height: SizeConfig.screenHeight! * 0.2),
           DefaultButton(
             text: "Aggiorna Numero di Telefono",
             press: () {
@@ -64,11 +64,11 @@ class _ChangePhoneNumberFormState extends State<ChangePhoneNumberForm> {
   }
 
   Future<void> updatePhoneNumberButtonCallback() async {
-    if (_formKey.currentState.validate()) {
-      _formKey.currentState.save();
+    if (_formKey.currentState!.validate()) {
+      _formKey.currentState!.save();
 
-      bool status = false;
-      String snackbarMessage;
+      bool? status = false;
+      String? snackbarMessage;
       try {
         status = await UserDatabaseHelper()
             .updatePhoneForCurrentUser(newPhoneNumberController.text);
@@ -87,7 +87,7 @@ class _ChangePhoneNumberFormState extends State<ChangePhoneNumberForm> {
         Logger().i(snackbarMessage);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(snackbarMessage),
+            content: Text(snackbarMessage!),
           ),
         );
       }
@@ -124,9 +124,9 @@ class _ChangePhoneNumberFormState extends State<ChangePhoneNumberForm> {
           final error = snapshot.error;
           Logger().w(error.toString());
         }
-        String currentPhone;
+        String? currentPhone;
         if (snapshot.hasData && snapshot.data != null)
-          currentPhone = snapshot.data.data()[UserDatabaseHelper.PHONE_KEY];
+          currentPhone = snapshot.data![UserDatabaseHelper.PHONE_KEY!];
         final textField = TextFormField(
           controller: currentPhoneNumberController,
           decoration: InputDecoration(

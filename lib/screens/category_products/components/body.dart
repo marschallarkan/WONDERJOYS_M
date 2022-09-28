@@ -15,33 +15,33 @@ import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 
 class Body extends StatefulWidget {
-  final ProductType productType;
+  final ProductType? productType;
 
   Body({
-    Key key,
-    @required this.productType,
+    Key? key,
+     this.productType,
   }) : super(key: key);
 
   @override
   _BodyState createState() =>
-      _BodyState(categoryProductsStream: CategoryProductsStream(productType));
+      _BodyState(categoryProductsStream: CategoryProductsStream(productType!));
 }
 
 class _BodyState extends State<Body> {
-  final CategoryProductsStream categoryProductsStream;
+  final CategoryProductsStream? categoryProductsStream;
 
-  _BodyState({@required this.categoryProductsStream});
+  _BodyState({ this.categoryProductsStream});
 
   @override
   void initState() {
     super.initState();
-    categoryProductsStream.init();
+    categoryProductsStream!.init();
   }
 
   @override
   void dispose() {
     super.dispose();
-    categoryProductsStream.dispose();
+    categoryProductsStream!.dispose();
   }
 
   @override
@@ -62,14 +62,14 @@ class _BodyState extends State<Body> {
                   buildHeadBar(),
                   SizedBox(height: getProportionateScreenHeight(20)),
                   SizedBox(
-                    height: SizeConfig.screenHeight * 0.13,
+                    height: SizeConfig.screenHeight! * 0.13,
                     child: buildCategoryBanner(),
                   ),
                   SizedBox(height: getProportionateScreenHeight(20)),
                   SizedBox(
-                    height: SizeConfig.screenHeight * 0.68,
-                    child: StreamBuilder<List<String>>(
-                      stream: categoryProductsStream.stream,
+                    height: SizeConfig.screenHeight! * 0.68,
+                    child: StreamBuilder<dynamic>(
+                      stream: categoryProductsStream!.stream,
                       builder: (context, snapshot) {
                         if (snapshot.hasData) {
                           List<String> productsId = snapshot.data;
@@ -128,18 +128,18 @@ class _BodyState extends State<Body> {
             onSubmit: (value) async {
               final query = value.toString();
               if (query.length <= 0) return;
-              List<String> searchedProductsId;
+              List<dynamic> searchedProductsId;
               try {
                 searchedProductsId = await ProductDatabaseHelper()
                     .searchInProducts(query.toLowerCase(),
-                        productType: widget.productType);
+                        productType: widget.productType!);
                 if (searchedProductsId != null) {
                   await Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => SearchResultScreen(
                         searchQuery: query,
-                        searchResultProductsId: searchedProductsId,
+                        searchResultProductsId: searchedProductsId as dynamic,
                         searchIn:
                             EnumToString.convertToString(widget.productType),
                       ),
@@ -166,7 +166,7 @@ class _BodyState extends State<Body> {
   }
 
   Future<void> refreshPage() {
-    categoryProductsStream.reload();
+    categoryProductsStream!.reload();
     return Future<void>.value();
   }
 

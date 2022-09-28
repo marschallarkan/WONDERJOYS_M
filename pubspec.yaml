@@ -18,34 +18,34 @@ publish_to: "none" # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+5
 
 environment:
-  sdk: ">=2.10.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  cloud_firestore: ^0.14.4
-  cupertino_icons: ^1.0.0
-  enum_to_string: ^1.0.14
-  firebase_auth: ^0.18.4+1
-  firebase_core: ^0.5.3
-  firebase_storage: ^5.2.0
-  flutter_launcher_icons: ^0.8.1
-  flutter_rating_bar: ^3.2.0+1
-  flutter_svg: ^0.19.2+1
-  flutter_tags: ^0.4.9+1
-  future_progress_dialog: ^0.1.1
-  image_picker: ^0.6.7+15
-  intl: ^0.16.1
-  logger: ^0.9.4
-  permission_handler: ^5.0.1+1
-  # pinch_zoom_image_updated: ^0.2.6
-  provider: ^4.3.2+3
-  string_validator: ^0.1.4
-  swipedetector: ^1.2.0
-  url_launcher: ^5.7.10
-  shared_preferences_web: ^2.0.3
-  pinch_zoom_image_updated: ^0.2.6
-  progress_dialog: ^1.2.4
+  cloud_firestore:
+  cupertino_icons:
+  enum_to_string:
+  firebase_auth:
+  firebase_core:
+  firebase_storage:
+  flutter_launcher_icons:
+  flutter_rating_bar:
+  flutter_svg:
+  flutter_tags:
+  future_progress_dialog:
+  image_picker:
+  intl:
+  logger:
+  permission_handler:
+  pinch_zoom_image_updated:
+  provider:
+  string_validator:
+  swipedetector:
+  url_launcher:
+  shared_preferences_web:
+
+  progress_dialog:
 
 dev_dependencies:
   flutter_test:

@@ -7,9 +7,9 @@ import 'package:flutter/material.dart';
 import 'address_details_form.dart';
 
 class Body extends StatelessWidget {
-  final String addressIdToEdit;
+  final String? addressIdToEdit;
 
-  const Body({Key key, this.addressIdToEdit}) : super(key: key);
+  const Body({Key? key, this.addressIdToEdit}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -30,15 +30,15 @@ class Body extends StatelessWidget {
                 SizedBox(height: getProportionateScreenHeight(30)),
                 addressIdToEdit == null
                     ? AddressDetailsForm(
-                        addressToEdit: null,
+                        addressToEdit: null!,
                       )
                     : FutureBuilder<Address>(
                         future: UserDatabaseHelper()
-                            .getAddressFromId(addressIdToEdit),
+                            .getAddressFromId(addressIdToEdit!),
                         builder: (context, snapshot) {
                           if (snapshot.hasData) {
                             final address = snapshot.data;
-                            return AddressDetailsForm(addressToEdit: address);
+                            return AddressDetailsForm(addressToEdit: address!);
                           } else if (snapshot.connectionState ==
                               ConnectionState.waiting) {
                             return Center(
@@ -46,7 +46,7 @@ class Body extends StatelessWidget {
                             );
                           }
                           return AddressDetailsForm(
-                            addressToEdit: null,
+                            addressToEdit: null!,
                           );
                         },
                       ),

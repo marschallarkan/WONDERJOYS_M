@@ -6,10 +6,10 @@ import '../constants.dart';
 import 'package:wonderjoys/models/Product.dart';
 
 class ProductCard extends StatelessWidget {
-  final String productId;
-  final GestureTapCallback press;
+  final String? productId;
+  final GestureTapCallback? press;
   const ProductCard({
-    Key key,
+    Key? key,
     @required this.productId,
     @required this.press,
   }) : super(key: key);
@@ -29,10 +29,10 @@ class ProductCard extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
           child: FutureBuilder<Product>(
-            future: ProductDatabaseHelper().getProductWithID(productId),
+            future: ProductDatabaseHelper().getProductWithID(productId!),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                final Product product = snapshot.data;
+                final Product product = snapshot.data!;
                 return buildProductCardItems(product);
               } else if (snapshot.connectionState == ConnectionState.waiting) {
                 return Center(
@@ -65,7 +65,7 @@ class ProductCard extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Image.network(
-              product.images[0],
+              product.images![0],
               fit: BoxFit.contain,
             ),
           ),

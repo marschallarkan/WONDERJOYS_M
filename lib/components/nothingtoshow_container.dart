@@ -9,7 +9,7 @@ class NothingToShowContainer extends StatelessWidget {
   final String secondaryMessage;
 
   const NothingToShowContainer({
-    Key key,
+    Key? key,
     this.iconPath = "assets/icons/empty_box.svg",
     this.primaryMessage = "Niente da mostrare",
     this.secondaryMessage = "",
@@ -17,8 +17,8 @@ class NothingToShowContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: SizeConfig.screenWidth * 0.75,
-      height: SizeConfig.screenHeight * 0.2,
+      width: SizeConfig.screenWidth! * 0.75,
+      height: SizeConfig.screenHeight! * 0.2,
       child: SingleChildScrollView(
         child: Column(
           children: [

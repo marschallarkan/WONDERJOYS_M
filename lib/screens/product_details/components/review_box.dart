@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import '../../../constants.dart';
 
 class ReviewBox extends StatelessWidget {
-  final Review review;
+  final Review? review;
   const ReviewBox({
-    Key key,
-    @required this.review,
+    Key? key,
+     this.review,
   }) : super(key: key);
 
   @override
@@ -28,7 +28,7 @@ class ReviewBox extends StatelessWidget {
         children: [
           Expanded(
             child: Text(
-              review.feedback,
+              review!.feedback!,
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 14,
@@ -43,7 +43,7 @@ class ReviewBox extends StatelessWidget {
                 color: Colors.amber,
               ),
               Text(
-                "${review.rating}",
+                "${review!.rating!}",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.black,

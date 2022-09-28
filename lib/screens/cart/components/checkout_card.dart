@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import '../../../size_config.dart';
 
 class CheckoutCard extends StatelessWidget {
-  final VoidCallback onCheckoutPressed;
+  final VoidCallback? onCheckoutPressed;
   const CheckoutCard({
-    Key key,
-    @required this.onCheckoutPressed,
+    Key? key,
+     this.onCheckoutPressed,
   }) : super(key: key);
 
   @override

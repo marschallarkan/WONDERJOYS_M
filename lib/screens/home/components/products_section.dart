@@ -8,16 +8,16 @@ import 'package:logger/logger.dart';
 import '../../../size_config.dart';
 
 class ProductsSection extends StatelessWidget {
-  final String sectionTitle;
-  final DataStream productsStreamController;
-  final String emptyListMessage;
-  final Function onProductCardTapped;
+  final String? sectionTitle;
+  final DataStream? productsStreamController;
+  final String? emptyListMessage;
+  final Function? onProductCardTapped;
   const ProductsSection({
-    Key key,
-    @required this.sectionTitle,
-    @required this.productsStreamController,
+    Key? key,
+     this.sectionTitle,
+     this.productsStreamController,
     this.emptyListMessage = "Nessun prodotto da mostrare qui",
-    @required this.onProductCardTapped,
+     this.onProductCardTapped,
   }) : super(key: key);
 
   @override
@@ -34,7 +34,7 @@ class ProductsSection extends StatelessWidget {
       child: Column(
         children: [
           SectionTile(
-            title: sectionTitle,
+            title: sectionTitle!,
             press: () {},
           ),
           SizedBox(height: getProportionateScreenHeight(15)),
@@ -47,14 +47,14 @@ class ProductsSection extends StatelessWidget {
   }
 
   Widget buildProductsList() {
-    return StreamBuilder<List<String>>(
-      stream: productsStreamController.stream,
+    return StreamBuilder<dynamic>(
+      stream: productsStreamController!.stream,
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         if (snapshot.hasData) {
           if (snapshot.data.length == 0) {
             return Center(
               child: NothingToShowContainer(
-                secondaryMessage: emptyListMessage,
+                secondaryMessage: emptyListMessage!,
               ),
             );
           }
@@ -93,7 +93,7 @@ class ProductsSection extends StatelessWidget {
         return ProductCard(
           productId: productsId[index],
           press: () {
-            onProductCardTapped.call(productsId[index]);
+            onProductCardTapped!.call(productsId[index]);
           },
         );
       },

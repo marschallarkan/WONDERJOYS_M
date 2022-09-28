@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:wonderjoys/components/default_button.dart';
 import 'package:wonderjoys/constants.dart';
 import 'package:wonderjoys/exceptions/local_files_handling/image_picking_exceptions.dart';
@@ -65,20 +66,20 @@ class Body extends StatelessWidget {
     return Container(
       child: StreamBuilder(
         stream: UserDatabaseHelper().currentUserDataStream,
-        builder: (context, snapshot) {
+        builder: (context, snapshot  ) {
           if (snapshot.hasError) {
             final error = snapshot.error;
             Logger().w(error.toString());
           }
-          ImageProvider backImage;
+          ImageProvider? backImage;
           if (bodyState.chosenImage != null) {
             backImage = MemoryImage(bodyState.chosenImage.readAsBytesSync());
-          } else if (snapshot.hasData && snapshot.data.data != null) {
-            final String url = snapshot.data.data()[UserDatabaseHelper.DP_KEY];
+          } else if (snapshot.hasData && snapshot.data != null) {
+            final String url = (snapshot.data as Map)[UserDatabaseHelper.DP_KEY];
             if (url != null) backImage = NetworkImage(url);
           }
           return CircleAvatar(
-            radius: SizeConfig.screenWidth * 0.3,
+            radius: SizeConfig.screenWidth! * 0.3,
             backgroundColor: kTextColor.withOpacity(0.5),
             backgroundImage: backImage ?? null,
           );
@@ -88,8 +89,8 @@ class Body extends StatelessWidget {
   }
 
   void getImageFromUser(BuildContext context, ChosenImage bodyState) async {
-    String path;
-    String snackbarMessage;
+    String? path;
+    String? snackbarMessage;
     try {
       path = await choseImageFromLocalFiles(context);
       if (path == null) {
@@ -149,8 +150,8 @@ class Body extends StatelessWidget {
 
   Future<void> uploadImageToFirestorage(
       BuildContext context, ChosenImage bodyState) async {
-    bool uploadDisplayPictureStatus = false;
-    String snackbarMessage;
+    bool? uploadDisplayPictureStatus = false;
+    String? snackbarMessage;
     try {
       final downloadUrl = await FirestoreFilesAccess().uploadFileToPath(
           bodyState.chosenImage,
@@ -173,7 +174,7 @@ class Body extends StatelessWidget {
       Logger().i(snackbarMessage);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(snackbarMessage),
+          content: Text(snackbarMessage!),
         ),
       );
     }
@@ -203,8 +204,8 @@ class Body extends StatelessWidget {
 
   Future<void> removeImageFromFirestore(
       BuildContext context, ChosenImage bodyState) async {
-    bool status = false;
-    String snackbarMessage;
+    bool? status = false;
+    String? snackbarMessage;
     try {
       bool fileDeletedFromFirestore = false;
       fileDeletedFromFirestore = await FirestoreFilesAccess()
@@ -226,7 +227,7 @@ class Body extends StatelessWidget {
       Logger().i(snackbarMessage);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(snackbarMessage),
+          content: Text(snackbarMessage!),
         ),
       );
     }

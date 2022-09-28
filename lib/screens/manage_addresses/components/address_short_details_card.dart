@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
 
 class AddressShortDetailsCard extends StatelessWidget {
-  final String addressId;
-  final Function onTap;
+  final String? addressId;
+  void Function()? onTap;
 
-  const AddressShortDetailsCard(
-      {Key key, @required this.addressId, @required this.onTap})
+   AddressShortDetailsCard(
+      {Key? key, this.addressId,  this.onTap})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -18,9 +18,9 @@ class AddressShortDetailsCard extends StatelessWidget {
       onTap: onTap,
       child: SizedBox(
         width: double.infinity,
-        height: SizeConfig.screenHeight * 0.15,
+        height: SizeConfig.screenHeight! * 0.15,
         child: FutureBuilder<Address>(
-          future: UserDatabaseHelper().getAddressFromId(addressId),
+          future: UserDatabaseHelper().getAddressFromId(addressId!),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               final address = snapshot.data;
@@ -41,7 +41,7 @@ class AddressShortDetailsCard extends StatelessWidget {
                       ),
                       child: Center(
                         child: Text(
-                          address.title,
+                          address!.title!,
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 18,
@@ -70,7 +70,7 @@ class AddressShortDetailsCard extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            address.receiver,
+                            address.receiver!,
                             style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,

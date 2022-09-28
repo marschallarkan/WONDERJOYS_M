@@ -1,7 +1,7 @@
 import 'package:wonderjoys/services/data_streams/data_stream.dart';
 import 'package:wonderjoys/services/database/product_database_helper.dart';
 
-class AllProductsStream extends DataStream<List<String>> {
+class AllProductsStream extends DataStream<List<dynamic>> {
   @override
   void reload() {
     final allProductsFuture = ProductDatabaseHelper().allProductsList;

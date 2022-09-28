@@ -131,11 +131,11 @@ class _SignUpFormState extends State<SignUpForm> {
   }
 
   Future<void> signUpButtonCallback() async {
-    if (_formKey.currentState.validate()) {
+    if (_formKey.currentState!.validate()) {
       // goto complete profile page
       final AuthentificationService authService = AuthentificationService();
-      bool signUpStatus = false;
-      String snackbarMessage;
+      bool? signUpStatus = false;
+      String? snackbarMessage;
       try {
         final signUpFuture = authService.signUp(
           email: emailFieldController.text,
@@ -165,7 +165,7 @@ class _SignUpFormState extends State<SignUpForm> {
         Logger().i(snackbarMessage);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(snackbarMessage),
+            content: Text(snackbarMessage!),
           ),
         );
         if (signUpStatus == true) {

@@ -4,11 +4,11 @@ import 'package:flutter_svg/svg.dart';
 import '../../../size_config.dart';
 
 class CategoryCard extends StatelessWidget {
-  final String icon;
-  final String text;
-  final GestureTapCallback press;
+  final String? icon;
+  final String? text;
+  final GestureTapCallback? press;
   const CategoryCard({
-    Key key,
+    Key? key,
     @required this.icon,
     @required this.text,
     @required this.press,
@@ -30,12 +30,12 @@ class CategoryCard extends StatelessWidget {
                   color: Color(0xFFFFECDF),
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: SvgPicture.asset(icon),
+                child: SvgPicture.asset(icon!),
               ),
             ),
             const SizedBox(height: 5),
             Text(
-              text,
+              text!,
               textAlign: TextAlign.center,
             ),
           ],

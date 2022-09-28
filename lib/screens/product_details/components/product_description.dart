@@ -8,11 +8,11 @@ import 'expandable_text.dart';
 
 class ProductDescription extends StatelessWidget {
   const ProductDescription({
-    Key key,
-    @required this.product,
+    Key? key,
+     this.product,
   }) : super(key: key);
 
-  final Product product;
+  final Product? product;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -22,7 +22,7 @@ class ProductDescription extends StatelessWidget {
           children: [
             Text.rich(
               TextSpan(
-                  text: product.title,
+                  text: product!.title,
                   style: TextStyle(
                     fontSize: 21,
                     color: Colors.black,
@@ -30,7 +30,7 @@ class ProductDescription extends StatelessWidget {
                   ),
                   children: [
                     TextSpan(
-                      text: "\€${product.variant} ",
+                      text: "\€${product!.variant} ",
                       style: TextStyle(
                         fontWeight: FontWeight.normal,
                         fontSize: 15,
@@ -48,7 +48,7 @@ class ProductDescription extends StatelessWidget {
                     flex: 4,
                     child: Text.rich(
                       TextSpan(
-                        text: "\€${product.discountPrice}   ",
+                        text: "\€${product!.discountPrice}   ",
                         style: TextStyle(
                           color: kPrimaryColor,
                           fontWeight: FontWeight.w900,
@@ -56,7 +56,7 @@ class ProductDescription extends StatelessWidget {
                         ),
                         children: [
                           TextSpan(
-                            text: "\n\€${product.originalPrice}",
+                            text: "\n\€${product!.originalPrice}",
                             style: TextStyle(
                               decoration: TextDecoration.lineThrough,
                               color: kTextColor,
@@ -78,7 +78,7 @@ class ProductDescription extends StatelessWidget {
                         ),
                         Center(
                           child: Text(
-                            "${product.calculatePercentageDiscount()}%\nOff",
+                            "${product!.calculatePercentageDiscount()}%\nOff",
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: getProportionateScreenHeight(15),
@@ -96,12 +96,12 @@ class ProductDescription extends StatelessWidget {
             const SizedBox(height: 16),
             ExpandableText(
               title: "Punti salienti",
-              content: product.highlights,
+              content: product!.highlights,
             ),
             const SizedBox(height: 16),
             ExpandableText(
               title: "Descrizione",
-              content: product.description,
+              content: product!.description,
             ),
             const SizedBox(height: 16),
             Text.rich(
@@ -113,7 +113,7 @@ class ProductDescription extends StatelessWidget {
                 ),
                 children: [
                   TextSpan(
-                    text: "${product.seller}",
+                    text: "${product!.seller}",
                     style: TextStyle(
                       decoration: TextDecoration.underline,
                     ),

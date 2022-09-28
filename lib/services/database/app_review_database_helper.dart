@@ -11,12 +11,12 @@ class AppReviewDatabaseHelper {
   factory AppReviewDatabaseHelper() {
     return _instance;
   }
-  FirebaseFirestore _firebaseFirestore;
+  FirebaseFirestore? _firebaseFirestore;
   FirebaseFirestore get firestore {
     if (_firebaseFirestore == null) {
       _firebaseFirestore = FirebaseFirestore.instance;
     }
-    return _firebaseFirestore;
+    return _firebaseFirestore!;
   }
 
   Future<bool> editAppReview(AppReview appReview) async {
@@ -36,7 +36,7 @@ class AppReviewDatabaseHelper {
     final docRef = firestore.collection(APP_REVIEW_COLLECTION_NAME).doc(uid);
     final docData = await docRef.get();
     if (docData.exists) {
-      final appReview = AppReview.fromMap(docData.data(), id: docData.id);
+      final appReview = AppReview.fromMap(docData.data()!, id: docData.id);
       return appReview;
     } else {
       final appReview = AppReview(uid, liked: true, feedback: "");

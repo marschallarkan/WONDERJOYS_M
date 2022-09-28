@@ -20,9 +20,9 @@ import '../../../constants.dart';
 import '../../../size_config.dart';
 
 class EditProductForm extends StatefulWidget {
-  final Product product;
+  final Product? product;
   EditProductForm({
-    Key key,
+    Key? key,
     this.product,
   }) : super(key: key);
 
@@ -47,8 +47,8 @@ class _EditProductFormState extends State<EditProductForm> {
       TextEditingController();
   final TextEditingController sellerFieldController = TextEditingController();
 
-  bool newProduct = true;
-  Product product;
+  bool? newProduct = true;
+  Product? product;
 
   @override
   void dispose() {
@@ -74,11 +74,11 @@ class _EditProductFormState extends State<EditProductForm> {
       newProduct = false;
       final productDetails =
           Provider.of<ProductDetails>(context, listen: false);
-      productDetails.initialSelectedImages = widget.product.images
+      productDetails.initialSelectedImages = widget.product!.images!
           .map((e) => CustomImage(imgType: ImageType.network, path: e))
           .toList();
-      productDetails.initialProductType = product.productType;
-      productDetails.initSearchTags = product.searchTags ?? [];
+      productDetails.initialProductType = product!.productType!;
+      productDetails.initSearchTags = product!.searchTags ?? [];
     }
   }
 
@@ -105,13 +105,13 @@ class _EditProductFormState extends State<EditProductForm> {
       ],
     );
     if (newProduct == false) {
-      titleFieldController.text = product.title;
-      variantFieldController.text = product.variant;
-      discountPriceFieldController.text = product.discountPrice.toString();
-      originalPriceFieldController.text = product.originalPrice.toString();
-      highlightsFieldController.text = product.highlights;
-      desciptionFieldController.text = product.description;
-      sellerFieldController.text = product.seller;
+      titleFieldController.text = product!.title!;
+      variantFieldController.text = product!.variant!;
+      discountPriceFieldController.text = product!.discountPrice.toString();
+      originalPriceFieldController.text = product!.originalPrice.toString();
+      highlightsFieldController.text = product!.highlights!;
+      desciptionFieldController.text = product!.description!;
+      sellerFieldController.text = product!.seller!;
     }
     return column;
   }
@@ -192,13 +192,13 @@ class _EditProductFormState extends State<EditProductForm> {
   }
 
   bool validateBasicDetailsForm() {
-    if (_basicDetailsFormKey.currentState.validate()) {
-      _basicDetailsFormKey.currentState.save();
-      product.title = titleFieldController.text;
-      product.variant = variantFieldController.text;
-      product.originalPrice = double.parse(originalPriceFieldController.text);
-      product.discountPrice = double.parse(discountPriceFieldController.text);
-      product.seller = sellerFieldController.text;
+    if (_basicDetailsFormKey.currentState!.validate()) {
+      _basicDetailsFormKey.currentState!.save();
+      product!.title = titleFieldController.text;
+      product!.variant = variantFieldController.text;
+      product!.originalPrice = double.parse(originalPriceFieldController.text);
+      product!.discountPrice = double.parse(discountPriceFieldController.text);
+      product!.seller = sellerFieldController.text;
       return true;
     }
     return false;
@@ -229,10 +229,10 @@ class _EditProductFormState extends State<EditProductForm> {
   }
 
   bool validateDescribeProductForm() {
-    if (_describeProductFormKey.currentState.validate()) {
-      _describeProductFormKey.currentState.save();
-      product.highlights = highlightsFieldController.text;
-      product.description = desciptionFieldController.text;
+    if (_describeProductFormKey.currentState!.validate()) {
+      _describeProductFormKey.currentState!.save();
+      product!.highlights = highlightsFieldController.text;
+      product!.description = desciptionFieldController.text;
       return true;
     }
     return false;
@@ -250,7 +250,7 @@ class _EditProductFormState extends State<EditProductForm> {
       ),
       child: Consumer<ProductDetails>(
         builder: (context, productDetails, child) {
-          return DropdownButton(
+          return DropdownButton<ProductType>(
             value: productDetails.productType,
             items: ProductType.values
                 .map(
@@ -270,7 +270,10 @@ class _EditProductFormState extends State<EditProductForm> {
               fontSize: 16,
             ),
             onChanged: (value) {
-              productDetails.productType = value;
+              setState(() {
+                productDetails.productType = value!;
+              });
+
             },
             elevation: 0,
             underline: SizedBox(width: 0, height: 0),
@@ -337,10 +340,10 @@ class _EditProductFormState extends State<EditProductForm> {
                         child: productDetails.selectedImages[index].imgType ==
                                 ImageType.local
                             ? Image.memory(
-                                File(productDetails.selectedImages[index].path)
+                                File(productDetails.selectedImages[index].path!)
                                     .readAsBytesSync())
                             : Image.network(
-                                productDetails.selectedImages[index].path),
+                                productDetails.selectedImages[index].path!),
                       ),
                     ),
                   ),
@@ -532,14 +535,14 @@ class _EditProductFormState extends State<EditProductForm> {
       );
       return;
     }
-    String productId;
-    String snackbarMessage;
+    String? productId;
+    String? snackbarMessage;
     try {
-      product.productType = productDetails.productType;
-      product.searchTags = productDetails.searchTags;
-      final productUploadFuture = newProduct
-          ? ProductDatabaseHelper().addUsersProduct(product)
-          : ProductDatabaseHelper().updateUsersProduct(product);
+      product!.productType = productDetails.productType;
+      product!.searchTags = productDetails.searchTags;
+      final productUploadFuture = newProduct!
+          ? ProductDatabaseHelper().addUsersProduct(product!)
+          : ProductDatabaseHelper().updateUsersProduct(product!);
       productUploadFuture.then((value) {
         productId = value;
       });
@@ -549,7 +552,7 @@ class _EditProductFormState extends State<EditProductForm> {
           return FutureProgressDialog(
             productUploadFuture,
             message:
-                Text(newProduct ? "Caricamento del Prodotto" : "Caricamento del Prodotto"),
+                Text(newProduct! ? "Caricamento del Prodotto" : "Caricamento del Prodotto"),
           );
         },
       );
@@ -568,14 +571,14 @@ class _EditProductFormState extends State<EditProductForm> {
       Logger().i(snackbarMessage);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(snackbarMessage),
+          content: Text(snackbarMessage!),
         ),
       );
     }
     if (productId == null) return;
     bool allImagesUploaded = false;
     try {
-      allImagesUploaded = await uploadProductImages(productId);
+      allImagesUploaded = await uploadProductImages(productId!);
       if (allImagesUploaded == true) {
         snackbarMessage = "Tutte le immagini sono state caricate con successo";
       } else {
@@ -591,17 +594,17 @@ class _EditProductFormState extends State<EditProductForm> {
       Logger().i(snackbarMessage);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(snackbarMessage),
+          content: Text(snackbarMessage!),
         ),
       );
     }
-    List<String> downloadUrls = productDetails.selectedImages
-        .map((e) => e.imgType == ImageType.network ? e.path : null)
+    List<String>? downloadUrls = productDetails.selectedImages
+        .map((e) => e.imgType == ImageType.network ? e.path : null).cast<String>()
         .toList();
-    bool productFinalizeUpdate = false;
+    bool? productFinalizeUpdate = false;
     try {
       final updateProductFuture =
-          ProductDatabaseHelper().updateProductsImages(productId, downloadUrls);
+          ProductDatabaseHelper().updateProductsImages(productId!, downloadUrls);
       productFinalizeUpdate = await showDialog(
         context: context,
         builder: (context) {
@@ -626,7 +629,7 @@ class _EditProductFormState extends State<EditProductForm> {
       Logger().i(snackbarMessage);
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(snackbarMessage),
+          content: Text(snackbarMessage!),
         ),
       );
     }
@@ -638,11 +641,11 @@ class _EditProductFormState extends State<EditProductForm> {
     final productDetails = Provider.of<ProductDetails>(context, listen: false);
     for (int i = 0; i < productDetails.selectedImages.length; i++) {
       if (productDetails.selectedImages[i].imgType == ImageType.local) {
-        print("Immagine in fase di caricamento: " + productDetails.selectedImages[i].path);
-        String downloadUrl;
+        print("Immagine in fase di caricamento: " + productDetails.selectedImages[i].path!);
+        String? downloadUrl;
         try {
           final imgUploadFuture = FirestoreFilesAccess().uploadFileToPath(
-              File(productDetails.selectedImages[i].path),
+              File(productDetails.selectedImages[i].path!),
               ProductDatabaseHelper().getPathForProductImage(productId, i));
           downloadUrl = await showDialog(
             context: context,
@@ -677,15 +680,15 @@ class _EditProductFormState extends State<EditProductForm> {
     return allImagesUpdated;
   }
 
-  Future<void> addImageButtonCallback({int index}) async {
+  Future<void> addImageButtonCallback({int? index}) async {
     final productDetails = Provider.of<ProductDetails>(context, listen: false);
     if (index == null && productDetails.selectedImages.length >= 3) {
       ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text("È possibile caricare massimo 3 immagini")));
       return;
     }
-    String path;
-    String snackbarMessage;
+    String? path;
+    String? snackbarMessage;
     try {
       path = await choseImageFromLocalFiles(context);
       if (path == null) {

@@ -1,7 +1,7 @@
 import 'dart:async';
 
 abstract class DataStream<T> {
-  StreamController<T> streamController;
+  late StreamController<T> streamController;
   void init() {
     streamController = StreamController();
     reload();

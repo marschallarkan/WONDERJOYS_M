@@ -9,9 +9,9 @@ import 'package:string_validator/string_validator.dart';
 import '../../../constants.dart';
 
 class AddressDetailsForm extends StatefulWidget {
-  final Address addressToEdit;
+  final Address? addressToEdit;
   AddressDetailsForm({
-    Key key,
+    Key? key,
     this.addressToEdit,
   }) : super(key: key);
 
@@ -96,16 +96,16 @@ class _AddressDetailsFormState extends State<AddressDetailsForm> {
       ),
     );
     if (widget.addressToEdit != null) {
-      titleFieldController.text = widget.addressToEdit.title;
-      receiverFieldController.text = widget.addressToEdit.receiver;
-      addressLine1FieldController.text = widget.addressToEdit.addresLine1;
-      addressLine2FieldController.text = widget.addressToEdit.addressLine2;
-      cityFieldController.text = widget.addressToEdit.city;
-      districtFieldController.text = widget.addressToEdit.district;
-      stateFieldController.text = widget.addressToEdit.state;
-      landmarkFieldController.text = widget.addressToEdit.landmark;
-      pincodeFieldController.text = widget.addressToEdit.pincode;
-      phoneFieldController.text = widget.addressToEdit.phone;
+      titleFieldController.text = widget.addressToEdit!.title!;
+      receiverFieldController.text = widget.addressToEdit!.receiver!;
+      addressLine1FieldController.text = widget.addressToEdit!.addresLine1!;
+      addressLine2FieldController.text = widget.addressToEdit!.addressLine2!;
+      cityFieldController.text = widget.addressToEdit!.city!;
+      districtFieldController.text = widget.addressToEdit!.district!;
+      stateFieldController.text = widget.addressToEdit!.state!;
+      landmarkFieldController.text = widget.addressToEdit!.landmark!;
+      pincodeFieldController.text = widget.addressToEdit!.pincode!;
+      phoneFieldController.text = widget.addressToEdit!.phone!;
     }
     return form;
   }
@@ -308,11 +308,11 @@ class _AddressDetailsFormState extends State<AddressDetailsForm> {
   }
 
   Future<void> saveNewAddressButtonCallback() async {
-    if (_formKey.currentState.validate()) {
-      _formKey.currentState.save();
+    if (_formKey.currentState!.validate()) {
+      _formKey.currentState!.save();
       final Address newAddress = generateAddressObject();
-      bool status = false;
-      String snackbarMessage;
+      bool? status = false;
+      String? snackbarMessage;
       try {
         status =
             await UserDatabaseHelper().addAddressForCurrentUser(newAddress);
@@ -331,7 +331,7 @@ class _AddressDetailsFormState extends State<AddressDetailsForm> {
         Logger().i(snackbarMessage);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(snackbarMessage),
+            content: Text(snackbarMessage!),
           ),
         );
       }
@@ -339,13 +339,13 @@ class _AddressDetailsFormState extends State<AddressDetailsForm> {
   }
 
   Future<void> saveEditedAddressButtonCallback() async {
-    if (_formKey.currentState.validate()) {
-      _formKey.currentState.save();
+    if (_formKey.currentState!.validate()) {
+      _formKey.currentState!.save();
       final Address newAddress =
-          generateAddressObject(id: widget.addressToEdit.id);
+          generateAddressObject(id: widget.addressToEdit!.id);
 
-      bool status = false;
-      String snackbarMessage;
+      bool? status = false;
+      String? snackbarMessage;
       try {
         status =
             await UserDatabaseHelper().updateAddressForCurrentUser(newAddress);
@@ -364,14 +364,14 @@ class _AddressDetailsFormState extends State<AddressDetailsForm> {
         Logger().i(snackbarMessage);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(snackbarMessage),
+            content: Text(snackbarMessage!),
           ),
         );
       }
     }
   }
 
-  Address generateAddressObject({String id}) {
+  Address generateAddressObject({String? id}) {
     return Address(
       id: id,
       title: titleFieldController.text,

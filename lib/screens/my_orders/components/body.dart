@@ -56,7 +56,7 @@ class _BodyState extends State<Body> {
                   ),
                   SizedBox(height: getProportionateScreenHeight(20)),
                   SizedBox(
-                    height: SizeConfig.screenHeight * 0.75,
+                    height: SizeConfig.screenHeight! * 0.75,
                     child: buildOrderedProductsList(),
                   ),
                 ],
@@ -74,7 +74,7 @@ class _BodyState extends State<Body> {
   }
 
   Widget buildOrderedProductsList() {
-    return StreamBuilder<List<String>>(
+    return StreamBuilder<dynamic>(
       stream: orderedProductsStream.stream,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
@@ -97,7 +97,7 @@ class _BodyState extends State<Body> {
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
                     final orderedProduct = snapshot.data;
-                    return buildOrderedProductItem(orderedProduct);
+                    return buildOrderedProductItem(orderedProduct!);
                   } else if (snapshot.connectionState ==
                       ConnectionState.waiting) {
                     return Center(child: CircularProgressIndicator());
@@ -188,7 +188,7 @@ class _BodyState extends State<Body> {
                     ),
                   ),
                   child: ProductShortDetailCard(
-                    productId: product.id,
+                    productId: product!.id,
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -216,11 +216,11 @@ class _BodyState extends State<Body> {
                       bottomRight: Radius.circular(16),
                     ),
                   ),
-                  child: FlatButton(
+                  child: TextButton(
                     onPressed: () async {
                       String currentUserUid =
                           AuthentificationService().currentUser.uid;
-                      Review prevReview;
+                      Review? prevReview;
                       try {
                         prevReview = await ProductDatabaseHelper()
                             .getProductReviewWithID(product.id, currentUserUid);
@@ -247,7 +247,7 @@ class _BodyState extends State<Body> {
                       );
                       if (result is Review) {
                         bool reviewAdded = false;
-                        String snackbarMessage;
+                        String? snackbarMessage;
                         try {
                           reviewAdded = await ProductDatabaseHelper()
                               .addProductReview(product.id, result);
@@ -267,7 +267,7 @@ class _BodyState extends State<Body> {
                           Logger().i(snackbarMessage);
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
-                              content: Text(snackbarMessage),
+                              content: Text(snackbarMessage!),
                             ),
                           );
                         }

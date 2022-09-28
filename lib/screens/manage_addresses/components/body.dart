@@ -68,8 +68,8 @@ class _BodyState extends State<Body> {
                   ),
                   SizedBox(height: getProportionateScreenHeight(30)),
                   SizedBox(
-                    height: SizeConfig.screenHeight * 0.7,
-                    child: StreamBuilder<List<String>>(
+                    height: SizeConfig.screenHeight! * 0.7,
+                    child: StreamBuilder<dynamic>(
                       stream: addressesStream.stream,
                       builder: (context, snapshot) {
                         if (snapshot.hasData) {
@@ -131,13 +131,13 @@ class _BodyState extends State<Body> {
           title: Text("Conferma"),
           content: Text("Sei Sicuro di Voler Eliminare Questo Indirizzo ?"),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text("Si"),
               onPressed: () {
                 Navigator.pop(context, true);
               },
             ),
-            FlatButton(
+            TextButton(
               child: Text("No"),
               onPressed: () {
                 Navigator.pop(context, false);
@@ -149,8 +149,8 @@ class _BodyState extends State<Body> {
     );
 
     if (confirmDeletion) {
-      bool status = false;
-      String snackbarMessage;
+      bool? status = false;
+      String? snackbarMessage;
       try {
         status =
             await UserDatabaseHelper().deleteAddressForCurrentUser(addressId);
@@ -169,12 +169,12 @@ class _BodyState extends State<Body> {
         Logger().i(snackbarMessage);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(snackbarMessage),
+            content: Text(snackbarMessage!),
           ),
         );
       }
       await refreshPage();
-      return status;
+      return status!;
     }
     return false;
   }

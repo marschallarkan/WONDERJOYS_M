@@ -13,7 +13,7 @@ class Body extends StatelessWidget {
           width: double.infinity,
           child: Column(
             children: [
-              SizedBox(height: SizeConfig.screenHeight * 0.02),
+              SizedBox(height: SizeConfig.screenHeight! * 0.02),
               Text(
                 "Registra Account",
                 style: headingStyle,
@@ -22,7 +22,7 @@ class Body extends StatelessWidget {
                 "Completa i tuoi dati o continua \ncon i social media",
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: SizeConfig.screenHeight * 0.07),
+              SizedBox(height: SizeConfig.screenHeight! * 0.07),
               SignUpForm(),
               SizedBox(height: getProportionateScreenHeight(20)),
               Text(

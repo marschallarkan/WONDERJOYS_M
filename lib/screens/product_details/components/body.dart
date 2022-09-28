@@ -9,11 +9,11 @@ import 'package:logger/logger.dart';
 import 'product_review_section.dart';
 
 class Body extends StatelessWidget {
-  final String productId;
+  final String? productId;
 
   const Body({
-    Key key,
-    @required this.productId,
+    Key? key,
+     this.productId,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class Body extends StatelessWidget {
                 final product = snapshot.data;
                 return Column(
                   children: [
-                    ProductImages(product: product),
+                    ProductImages(product: product!),
                     SizedBox(height: getProportionateScreenHeight(20)),
                     ProductActionsSection(product: product),
                     SizedBox(height: getProportionateScreenHeight(20)),

@@ -6,10 +6,10 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import '../../../size_config.dart';
 
 class ProductReviewDialog extends StatelessWidget {
-  final Review review;
+  final Review? review;
   ProductReviewDialog({
-    Key key,
-    @required this.review,
+    Key? key,
+     this.review,
   }) : super(key: key);
 
   @override
@@ -23,7 +23,7 @@ class ProductReviewDialog extends StatelessWidget {
       children: [
         Center(
           child: RatingBar.builder(
-            initialRating: review.rating.toDouble(),
+            initialRating: review!.rating!.toDouble(),
             minRating: 1,
             direction: Axis.horizontal,
             allowHalfRating: false,
@@ -34,21 +34,21 @@ class ProductReviewDialog extends StatelessWidget {
               color: Colors.amber,
             ),
             onRatingUpdate: (rating) {
-              review.rating = rating.round();
+              review!.rating = rating.round();
             },
           ),
         ),
         SizedBox(height: getProportionateScreenHeight(20)),
         Center(
           child: TextFormField(
-            initialValue: review.feedback,
+            initialValue: review!.feedback,
             decoration: InputDecoration(
               hintText: "Feedback del prodotto",
               labelText: "Feedback (opzionale)",
               floatingLabelBehavior: FloatingLabelBehavior.always,
             ),
             onChanged: (value) {
-              review.feedback = value;
+              review!.feedback = value;
             },
             maxLines: null,
             maxLength: 150,

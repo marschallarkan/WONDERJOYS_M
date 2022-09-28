@@ -10,11 +10,11 @@ import '../../../size_config.dart';
 
 class ProductImages extends StatelessWidget {
   const ProductImages({
-    Key key,
-    @required this.product,
+    Key? key,
+     this.product,
   }) : super(key: key);
 
-  final Product product;
+  final Product? product;
 
   @override
   Widget build(BuildContext context) {
@@ -28,14 +28,14 @@ class ProductImages extends StatelessWidget {
                 onSwipeLeft: () {
                   productImagesSwiper.currentImageIndex++;
                   productImagesSwiper.currentImageIndex %=
-                      product.images.length;
+                      product!.images!.length;
                 },
                 onSwipeRight: () {
                   productImagesSwiper.currentImageIndex--;
                   productImagesSwiper.currentImageIndex +=
-                      product.images.length;
+                      product!.images!.length;
                   productImagesSwiper.currentImageIndex %=
-                      product.images.length;
+                      product!.images!.length;
                 },
                 child: PinchZoomImage(
                   image: Container(
@@ -47,10 +47,10 @@ class ProductImages extends StatelessWidget {
                       ),
                     ),
                     child: SizedBox(
-                      height: SizeConfig.screenHeight * 0.35,
-                      width: SizeConfig.screenWidth * 0.75,
+                      height: SizeConfig.screenHeight! * 0.35,
+                      width: SizeConfig.screenWidth! * 0.75,
                       child: Image.network(
-                        product.images[productImagesSwiper.currentImageIndex],
+                        product!.images![productImagesSwiper.currentImageIndex],
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -62,7 +62,7 @@ class ProductImages extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ...List.generate(
-                    product.images.length,
+                    product!.images!.length,
                     (index) =>
                         buildSmallPreview(productImagesSwiper, index: index),
                   ),
@@ -76,10 +76,10 @@ class ProductImages extends StatelessWidget {
   }
 
   Widget buildSmallPreview(ProductImageSwiper productImagesSwiper,
-      {@required int index}) {
+      { int? index}) {
     return GestureDetector(
       onTap: () {
-        productImagesSwiper.currentImageIndex = index;
+        productImagesSwiper.currentImageIndex = index!;
       },
       child: Container(
         margin:
@@ -95,7 +95,7 @@ class ProductImages extends StatelessWidget {
                   ? kPrimaryColor
                   : Colors.transparent),
         ),
-        child: Image.network(product.images[index]),
+        child: Image.network(product!.images![index!]),
       ),
     );
   }

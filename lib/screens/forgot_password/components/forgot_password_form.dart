@@ -34,12 +34,12 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
         children: [
           buildEmailFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
-          SizedBox(height: SizeConfig.screenHeight * 0.1),
+          SizedBox(height: SizeConfig.screenHeight! * 0.1),
           DefaultButton(
             text: "Invia email di verifica",
             press: sendVerificationEmailButtonCallback,
           ),
-          SizedBox(height: SizeConfig.screenHeight * 0.1),
+          SizedBox(height: SizeConfig.screenHeight! * 0.1),
           NoAccountText(),
           SizedBox(height: getProportionateScreenHeight(30)),
         ],
@@ -60,7 +60,7 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
         ),
       ),
       validator: (value) {
-        if (value.isEmpty) {
+        if (value!.isEmpty) {
           return kEmailNullError;
         } else if (!emailValidatorRegExp.hasMatch(value)) {
           return kInvalidEmailError;
@@ -72,11 +72,11 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
   }
 
   Future<void> sendVerificationEmailButtonCallback() async {
-    if (_formKey.currentState.validate()) {
-      _formKey.currentState.save();
+    if (_formKey.currentState!.validate()) {
+      _formKey.currentState!.save();
       final String emailInput = emailFieldController.text.trim();
-      bool resultStatus;
-      String snackbarMessage;
+      bool? resultStatus;
+      String? snackbarMessage;
       try {
         final resultFuture =
             AuthentificationService().resetPasswordForEmail(emailInput);
@@ -105,7 +105,7 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
         Logger().i(snackbarMessage);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(snackbarMessage),
+            content: Text(snackbarMessage!),
           ),
         );
       }

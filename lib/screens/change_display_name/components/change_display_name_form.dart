@@ -8,7 +8,7 @@ import '../../../size_config.dart';
 
 class ChangeDisplayNameForm extends StatefulWidget {
   const ChangeDisplayNameForm({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -37,11 +37,11 @@ class _ChangeDisplayNameFormState extends State<ChangeDisplayNameForm> {
       key: _formKey,
       child: Column(
         children: [
-          SizedBox(height: SizeConfig.screenHeight * 0.1),
+          SizedBox(height: SizeConfig.screenHeight! * 0.1),
           buildCurrentDisplayNameField(),
-          SizedBox(height: SizeConfig.screenHeight * 0.05),
+          SizedBox(height: SizeConfig.screenHeight! * 0.05),
           buildNewDisplayNameField(),
-          SizedBox(height: SizeConfig.screenHeight * 0.2),
+          SizedBox(height: SizeConfig.screenHeight! * 0.2),
           DefaultButton(
             text: "Cambia nome visualizzato",
             press: () {
@@ -87,12 +87,12 @@ class _ChangeDisplayNameFormState extends State<ChangeDisplayNameForm> {
   }
 
   Widget buildCurrentDisplayNameField() {
-    return StreamBuilder<User>(
+    return StreamBuilder<User?>(
       stream: AuthentificationService().userChanges,
       builder: (context, snapshot) {
-        String displayName;
+        String? displayName;
         if (snapshot.hasData && snapshot.data != null)
-          displayName = snapshot.data.displayName;
+          displayName = snapshot.data!.displayName;
         final textField = TextFormField(
           controller: currentDisplayNameController,
           decoration: InputDecoration(
@@ -111,8 +111,8 @@ class _ChangeDisplayNameFormState extends State<ChangeDisplayNameForm> {
   }
 
   Future<void> changeDisplayNameButtonCallback() async {
-    if (_formKey.currentState.validate()) {
-      _formKey.currentState.save();
+    if (_formKey.currentState!.validate()) {
+      _formKey.currentState!.save();
       await AuthentificationService()
           .updateCurrentUserDisplayName(newDisplayNameController.text);
       print("Nome visualizzato aggiornato a ${newDisplayNameController.text} ...");

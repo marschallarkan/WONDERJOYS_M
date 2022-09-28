@@ -4,11 +4,11 @@ import 'package:flutter_svg/svg.dart';
 import '../size_config.dart';
 
 class SocialCard extends StatelessWidget {
-  final String icon;
-  final Function press;
-  const SocialCard({
-    Key key,
-    @required this.icon,
+  final String? icon;
+  void Function()? press;
+   SocialCard({
+    Key? key,
+     this.icon,
     this.press,
   }) : super(key: key);
 
@@ -26,7 +26,7 @@ class SocialCard extends StatelessWidget {
           color: Color(0xFFF5F6F9),
           shape: BoxShape.circle,
         ),
-        child: SvgPicture.asset(icon),
+        child: SvgPicture.asset(icon!),
       ),
     );
   }

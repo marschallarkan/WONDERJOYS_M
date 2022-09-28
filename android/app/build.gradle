@@ -41,7 +41,7 @@ if (localPropertiesFile.exists()) {
         defaultConfig {
             // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
             applicationId "com.arkan.wonderjoys"
-            minSdkVersion 23
+            minSdkVersion 19
             targetSdkVersion 31
             multiDexEnabled true
             versionCode flutterVersionCode.toInteger()

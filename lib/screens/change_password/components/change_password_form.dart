@@ -132,16 +132,16 @@ class _ChangePasswordFormState extends State<ChangePasswordForm> {
   }
 
   Future<void> changePasswordButtonCallback() async {
-    if (_formKey.currentState.validate()) {
-      _formKey.currentState.save();
+    if (_formKey.currentState!.validate()) {
+      _formKey.currentState!.save();
       final AuthentificationService authService = AuthentificationService();
       bool currentPasswordValidation = await authService
           .verifyCurrentUserPassword(currentPasswordController.text);
       if (currentPasswordValidation == false) {
         print("La password corrente fornita è sbagliata");
       } else {
-        bool updationStatus = false;
-        String snackbarMessage;
+        bool? updationStatus = false;
+        String? snackbarMessage;
         try {
           updationStatus = await authService.changePasswordForCurrentUser(
               newPassword: newPasswordController.text);
@@ -160,7 +160,7 @@ class _ChangePasswordFormState extends State<ChangePasswordForm> {
           Logger().i(snackbarMessage);
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text(snackbarMessage),
+              content: Text(snackbarMessage!),
             ),
           );
         }

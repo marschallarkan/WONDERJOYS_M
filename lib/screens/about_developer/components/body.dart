@@ -34,7 +34,7 @@ class Body extends StatelessWidget {
                 SizedBox(height: getProportionateScreenHeight(50)),
                 CircleAvatar(
                   backgroundImage: AssetImage('assets/images/developer.png'),
-                  radius: SizeConfig.screenWidth * 0.3,
+                  radius: SizeConfig.screenWidth! * 0.3,
                   backgroundColor: kTextColor.withOpacity(0.75),
                 ),
 
@@ -159,25 +159,25 @@ class Body extends StatelessWidget {
           if (snapshot.hasData) {
             final url = snapshot.data;
             return CircleAvatar(
-              radius: SizeConfig.screenWidth * 0.3,
+              radius: SizeConfig.screenWidth! * 0.3,
               backgroundColor: kTextColor.withOpacity(0.75),
-              backgroundImage: NetworkImage(url),
+              backgroundImage: NetworkImage(url!),
             );
           } else if (snapshot.hasError) {
             final error = snapshot.error.toString();
             Logger().e(error);
           }
           return CircleAvatar(
-            radius: SizeConfig.screenWidth * 0.3,
+            radius: SizeConfig.screenWidth! * 0.3,
             backgroundColor: kTextColor.withOpacity(0.75),
           );
         });
   }
 
-  Future<void> launchUrl(String url) async {
+  Future<void> launchUrl(String? url) async {
     try {
-      if (await canLaunch(url)) {
-        await launch(url);
+      if (await canLaunch(url!)) {
+        await launchUrl;
       } else {
         Logger().i("Impossibile avviare l'URL di Instagram");
       }
@@ -188,7 +188,7 @@ class Body extends StatelessWidget {
 
   Future<void> submitAppReview(BuildContext context,
       {bool liked = true}) async {
-    AppReview prevReview;
+    AppReview? prevReview;
     try {
       prevReview = await AppReviewDatabaseHelper().getAppReviewOfCurrentUser();
     } on FirebaseException catch (e) {
@@ -215,8 +215,8 @@ class Body extends StatelessWidget {
     );
     if (result != null) {
       result.liked = liked;
-      bool reviewAdded = false;
-      String snackbarMessage;
+      bool? reviewAdded = false;
+      String? snackbarMessage;
       try {
         reviewAdded = await AppReviewDatabaseHelper().editAppReview(result);
         if (reviewAdded == true) {
@@ -234,7 +234,7 @@ class Body extends StatelessWidget {
         Logger().i(snackbarMessage);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(snackbarMessage),
+            content: Text(snackbarMessage!),
           ),
         );
       }

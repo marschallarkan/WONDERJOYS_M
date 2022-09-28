@@ -17,9 +17,9 @@ import '../components/home_header.dart';
 import 'product_type_box.dart';
 import 'products_section.dart';
 
-const String ICON_KEY = "icon";
-const String TITLE_KEY = "titolo";
-const String PRODUCT_TYPE_KEY = "Tipologia di prodotto";
+const String? ICON_KEY = "icon";
+const String? TITLE_KEY = "titolo";
+const String? PRODUCT_TYPE_KEY = "Tipologia di prodotto";
 
 class Body extends StatefulWidget {
   @override
@@ -29,34 +29,34 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   final productCategories = <Map>[
     <String, dynamic>{
-      ICON_KEY: "assets/icons/Electronics.svg",
-      TITLE_KEY: "Elettronica",
-      PRODUCT_TYPE_KEY: ProductType.Elettronica,
+      ICON_KEY!: "assets/icons/Electronics.svg",
+      TITLE_KEY!: "Elettronica",
+      PRODUCT_TYPE_KEY!: ProductType.Elettronica,
     },
     <String, dynamic>{
-      ICON_KEY: "assets/icons/Books.svg",
-      TITLE_KEY: "Food",
-      PRODUCT_TYPE_KEY: ProductType.Food,
+      ICON_KEY!: "assets/icons/Books.svg",
+      TITLE_KEY!: "Food",
+      PRODUCT_TYPE_KEY!: ProductType.Food,
     },
     <String, dynamic>{
-      ICON_KEY: "assets/icons/Fashion.svg",
-      TITLE_KEY: "Moda",
-      PRODUCT_TYPE_KEY: ProductType.Moda,
+      ICON_KEY!: "assets/icons/Fashion.svg",
+      TITLE_KEY!: "Moda",
+      PRODUCT_TYPE_KEY!: ProductType.Moda,
     },
     <String, dynamic>{
-      ICON_KEY: "assets/icons/Groceries.svg",
-      TITLE_KEY: "Bellezza",
-      PRODUCT_TYPE_KEY: ProductType.Bellezza,
+      ICON_KEY!: "assets/icons/Groceries.svg",
+      TITLE_KEY!: "Bellezza",
+      PRODUCT_TYPE_KEY!: ProductType.Bellezza,
     },
     <String, dynamic>{
-      ICON_KEY: "assets/icons/Art.svg",
-      TITLE_KEY: "Servizi",
-      PRODUCT_TYPE_KEY: ProductType.Servizi,
+      ICON_KEY!: "assets/icons/Art.svg",
+      TITLE_KEY!: "Servizi",
+      PRODUCT_TYPE_KEY!: ProductType.Servizi,
     },
     <String, dynamic>{
-      ICON_KEY: "assets/icons/Others.svg",
-      TITLE_KEY: "Altre",
-      PRODUCT_TYPE_KEY: ProductType.Altre,
+      ICON_KEY!: "assets/icons/Others.svg",
+      TITLE_KEY!: "Altre",
+      PRODUCT_TYPE_KEY!: ProductType.Altre,
     },
   ];
 
@@ -97,7 +97,7 @@ class _BodyState extends State<Body> {
                   onSearchSubmitted: (value) async {
                     final query = value.toString();
                     if (query.length <= 0) return;
-                    List<String> searchedProductsId;
+                    List<dynamic> searchedProductsId;
                     try {
                       searchedProductsId = await ProductDatabaseHelper()
                           .searchInProducts(query.toLowerCase());
@@ -107,7 +107,7 @@ class _BodyState extends State<Body> {
                           MaterialPageRoute(
                             builder: (context) => SearchResultScreen(
                               searchQuery: query,
-                              searchResultProductsId: searchedProductsId,
+                              searchResultProductsId: searchedProductsId as dynamic,
                               searchIn: "Tutti i Prodotti",
                             ),
                           ),
@@ -160,7 +160,7 @@ class _BodyState extends State<Body> {
                 ),
                 SizedBox(height: getProportionateScreenHeight(15)),
                 SizedBox(
-                  height: SizeConfig.screenHeight * 0.1,
+                  height: SizeConfig.screenHeight! * 0.1,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 4),
                     child: ListView(
@@ -194,7 +194,7 @@ class _BodyState extends State<Body> {
                 ),
                 SizedBox(height: getProportionateScreenHeight(20)),
                 SizedBox(
-                  height: SizeConfig.screenHeight * 0.5,
+                  height: SizeConfig.screenHeight! * 0.5,
                   child: ProductsSection(
                     sectionTitle: "Prodotti che ti piacciono",
                     productsStreamController: favouriteProductsStream,
@@ -204,7 +204,7 @@ class _BodyState extends State<Body> {
                 ),
                 SizedBox(height: getProportionateScreenHeight(20)),
                 SizedBox(
-                  height: SizeConfig.screenHeight * 0.8,
+                  height: SizeConfig.screenHeight! * 0.8,
                   child: ProductsSection(
                     sectionTitle: "Esplora tutti i prodotti",
                     productsStreamController: allProductsStream,

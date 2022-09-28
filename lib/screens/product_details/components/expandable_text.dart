@@ -5,13 +5,13 @@ import 'package:provider/provider.dart';
 import '../../../constants.dart';
 
 class ExpandableText extends StatelessWidget {
-  final String title;
-  final String content;
-  final int maxLines;
+  final String? title;
+  final String? content;
+  final int? maxLines;
   const ExpandableText({
-    Key key,
-    @required this.title,
-    @required this.content,
+    Key? key,
+     this.title,
+     this.content,
     this.maxLines = 3,
   }) : super(key: key);
 
@@ -24,7 +24,7 @@ class ExpandableText extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              title,
+              title!,
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.w600,
@@ -37,7 +37,7 @@ class ExpandableText extends StatelessWidget {
               endIndent: 16,
             ),
             Text(
-              content,
+              content!,
               maxLines: expandText.isExpanded ? null : maxLines,
               textAlign: TextAlign.left,
             ),

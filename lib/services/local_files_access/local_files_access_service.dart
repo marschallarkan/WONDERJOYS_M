@@ -24,13 +24,13 @@ Future<String> choseImageFromLocalFiles(
       return AlertDialog(
         title: Text("Scegli l'origine dell'immagine"),
         actions: [
-          FlatButton(
+          TextButton(
             child: Text("Telecamera"),
             onPressed: () {
               Navigator.pop(context, ImageSource.camera);
             },
           ),
-          FlatButton(
+          TextButton(
             child: Text("Galleria"),
             onPressed: () {
               Navigator.pop(context, ImageSource.gallery);
@@ -44,7 +44,7 @@ Future<String> choseImageFromLocalFiles(
   if (imgSource == null)
     throw LocalImagePickingInvalidImageException(
         message: "Nessuna sorgente immagine selezionata");
-  final PickedFile imagePicked = await imgPicker.getImage(source: imgSource);
+  final PickedFile? imagePicked = await imgPicker.getImage(source: imgSource);
   if (imagePicked == null) {
     throw LocalImagePickingInvalidImageException();
   } else {

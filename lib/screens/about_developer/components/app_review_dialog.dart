@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import '../../../size_config.dart';
 
 class AppReviewDialog extends StatelessWidget {
-  final AppReview appReview;
+  final AppReview? appReview;
   AppReviewDialog({
-    Key key,
+    Key? key,
     @required this.appReview,
   }) : super(key: key);
 
@@ -23,14 +23,14 @@ class AppReviewDialog extends StatelessWidget {
       children: [
         Center(
           child: TextFormField(
-            initialValue: appReview.feedback,
+            initialValue: appReview!.feedback,
             decoration: InputDecoration(
               hintText: "Feedback per l'app",
               labelText: "Feedback(opzionale)",
               floatingLabelBehavior: FloatingLabelBehavior.always,
             ),
             onChanged: (value) {
-              appReview.feedback = value;
+              appReview!.feedback = value;
             },
             maxLines: null,
             maxLength: 150,

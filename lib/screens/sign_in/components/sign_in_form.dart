@@ -123,11 +123,11 @@ class _SignInFormState extends State<SignInForm> {
   }
 
   Future<void> signInButtonCallback() async {
-    if (_formkey.currentState.validate()) {
-      _formkey.currentState.save();
+    if (_formkey.currentState!.validate()) {
+      _formkey.currentState!.save();
       final AuthentificationService authService = AuthentificationService();
-      bool signInStatus = false;
-      String snackbarMessage;
+      bool? signInStatus = false;
+      String? snackbarMessage;
       try {
         final signInFuture = authService.signIn(
           email: emailFieldController.text.trim(),
@@ -156,7 +156,7 @@ class _SignInFormState extends State<SignInForm> {
         Logger().i(snackbarMessage);
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(snackbarMessage),
+            content: Text(snackbarMessage!),
           ),
         );
       }

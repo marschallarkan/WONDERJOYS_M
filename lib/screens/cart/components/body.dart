@@ -25,18 +25,18 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
-  final CartItemsStream cartItemsStream = CartItemsStream();
-  PersistentBottomSheetController bottomSheetHandler;
+  final CartItemsStream? cartItemsStream = CartItemsStream();
+  PersistentBottomSheetController? bottomSheetHandler;
   @override
   void initState() {
     super.initState();
-    cartItemsStream.init();
+    cartItemsStream!.init();
   }
 
   @override
   void dispose() {
     super.dispose();
-    cartItemsStream.dispose();
+    cartItemsStream!.dispose();
   }
 
   @override
@@ -60,7 +60,7 @@ class _BodyState extends State<Body> {
                   ),
                   SizedBox(height: getProportionateScreenHeight(20)),
                   SizedBox(
-                    height: SizeConfig.screenHeight * 0.75,
+                    height: SizeConfig.screenHeight! * 0.75,
                     child: Center(
                       child: buildCartItemsList(),
                     ),
@@ -75,16 +75,16 @@ class _BodyState extends State<Body> {
   }
 
   Future<void> refreshPage() {
-    cartItemsStream.reload();
+    cartItemsStream!.reload();
     return Future<void>.value();
   }
 
   Widget buildCartItemsList() {
-    return StreamBuilder<List<String>>(
-      stream: cartItemsStream.stream,
+    return StreamBuilder<dynamic>(
+      stream: cartItemsStream!.stream,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List<String> cartItemsId = snapshot.data;
+          List<String> cartItemsId = snapshot.data!;
           if (cartItemsId.length == 0) {
             return Center(
               child: NothingToShowContainer(
@@ -163,7 +163,7 @@ class _BodyState extends State<Body> {
           if (confirmation) {
             if (direction == DismissDirection.startToEnd) {
               bool result = false;
-              String snackbarMessage;
+              String? snackbarMessage;
               try {
                 result = await UserDatabaseHelper()
                     .removeProductFromCart(cartItemId);
@@ -183,7 +183,7 @@ class _BodyState extends State<Body> {
                 Logger().i(snackbarMessage);
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
-                    content: Text(snackbarMessage),
+                    content: Text(snackbarMessage!),
                   ),
                 );
               }
@@ -214,7 +214,7 @@ class _BodyState extends State<Body> {
         future: ProductDatabaseHelper().getProductWithID(cartItemId),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            Product product = snapshot.data;
+            Product product = snapshot.data!;
             return Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -267,7 +267,7 @@ class _BodyState extends State<Body> {
                             int itemCount = 0;
                             if (snapshot.hasData) {
                               final cartItem = snapshot.data;
-                              itemCount = cartItem.itemCount;
+                              itemCount = cartItem!.itemCount;
                             } else if (snapshot.hasError) {
                               final error = snapshot.error.toString();
                               Logger().e(error);
@@ -371,8 +371,8 @@ class _BodyState extends State<Body> {
             .map((e) => OrderedProduct(null,
                 productUid: e, orderDate: formatedDateTime))
             .toList();
-        bool addedProductsToMyProducts = false;
-        String snackbarmMessage;
+        bool? addedProductsToMyProducts = false;
+        String? snackbarmMessage;
         try {
           addedProductsToMyProducts =
               await UserDatabaseHelper().addToMyOrders(orderedProducts);
@@ -428,7 +428,7 @@ class _BodyState extends State<Body> {
 
   void shutBottomSheet() {
     if (bottomSheetHandler != null) {
-      bottomSheetHandler.close();
+      bottomSheetHandler!.close();
     }
   }
 

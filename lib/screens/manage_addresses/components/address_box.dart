@@ -6,11 +6,11 @@ import 'package:logger/logger.dart';
 
 class AddressBox extends StatelessWidget {
   const AddressBox({
-    Key key,
-    @required this.addressId,
+    Key? key,
+     this.addressId,
   }) : super(key: key);
 
-  final String addressId;
+  final String? addressId;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class AddressBox extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),
               ),
               child: FutureBuilder<Address>(
-                  future: UserDatabaseHelper().getAddressFromId(addressId),
+                  future: UserDatabaseHelper().getAddressFromId(addressId!),
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       final address = snapshot.data;
@@ -38,7 +38,7 @@ class AddressBox extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "${address.title}",
+                            "${address!.title!}",
                             style: TextStyle(
                               fontSize: 22,
                               color: Colors.black,

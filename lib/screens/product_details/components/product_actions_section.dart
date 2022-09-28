@@ -13,10 +13,10 @@ import '../../../size_config.dart';
 import '../../../utils.dart';
 
 class ProductActionsSection extends StatelessWidget {
-  final Product product;
+  final Product? product;
 
   const ProductActionsSection({
-    Key key,
+    Key? key,
     @required this.product,
   }) : super(key: key);
 
@@ -27,7 +27,7 @@ class ProductActionsSection extends StatelessWidget {
         Stack(
           children: [
             TopRoundedContainer(
-              child: ProductDescription(product: product),
+              child: ProductDescription(product: product!),
             ),
             Align(
               alignment: Alignment.topCenter,
@@ -37,7 +37,7 @@ class ProductActionsSection extends StatelessWidget {
         ),
       ],
     );
-    UserDatabaseHelper().isProductFavourite(product.id).then(
+    UserDatabaseHelper().isProductFavourite(product!.id).then(
       (value) {
         final productActions =
             Provider.of<ProductActions>(context, listen: false);
@@ -80,7 +80,7 @@ class ProductActionsSection extends StatelessWidget {
             bool success = false;
             final future = UserDatabaseHelper()
                 .switchProductFavouriteStatus(
-                    product.id, !productDetails.productFavStatus)
+                    product!.id, !productDetails.productFavStatus)
                 .then(
               (status) {
                 success = status;

@@ -15,7 +15,7 @@ class Body extends StatelessWidget {
               horizontal: getProportionateScreenWidth(screenPadding)),
           child: Column(
             children: [
-              SizedBox(height: SizeConfig.screenHeight * 0.04),
+              SizedBox(height: SizeConfig.screenHeight! * 0.04),
               Text(
                 "Change Phone Number",
                 style: headingStyle,

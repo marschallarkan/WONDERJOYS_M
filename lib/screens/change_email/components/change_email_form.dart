@@ -92,12 +92,12 @@ class _ChangeEmailFormState extends State<ChangeEmailForm> {
   }
 
   Widget buildCurrentEmailFormField() {
-    return StreamBuilder<User>(
+    return StreamBuilder<User?>(
       stream: AuthentificationService().userChanges,
       builder: (context, snapshot) {
-        String currentEmail;
+        String? currentEmail;
         if (snapshot.hasData && snapshot.data != null)
-          currentEmail = snapshot.data.email;
+          currentEmail = snapshot.data!.email!;
         final textField = TextFormField(
           controller: currentEmailController,
           decoration: InputDecoration(
@@ -142,14 +142,14 @@ class _ChangeEmailFormState extends State<ChangeEmailForm> {
   }
 
   Future<void> changeEmailButtonCallback() async {
-    if (_formKey.currentState.validate()) {
-      _formKey.currentState.save();
+    if (_formKey.currentState!.validate()) {
+      _formKey.currentState!.save();
       final AuthentificationService authService = AuthentificationService();
-      bool passwordValidation =
+      bool? passwordValidation =
           await authService.verifyCurrentUserPassword(passwordController.text);
       if (passwordValidation) {
-        bool updationStatus = false;
-        String snackbarMessage;
+        bool? updationStatus = false;
+        String? snackbarMessage;
         try {
           updationStatus = await authService.changeEmailForCurrentUser(
               newEmail: newEmailController.text);
@@ -169,7 +169,7 @@ class _ChangeEmailFormState extends State<ChangeEmailForm> {
           Logger().i(snackbarMessage);
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text(snackbarMessage),
+              content: Text(snackbarMessage!),
             ),
           );
         }

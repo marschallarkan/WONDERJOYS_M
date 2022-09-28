@@ -5,14 +5,14 @@ import '../../../constants.dart';
 import '../../../size_config.dart';
 
 class ProductTypeBox extends StatelessWidget {
-  final String icon;
-  final String title;
-  final VoidCallback onPress;
+  final String? icon;
+  final String? title;
+  final VoidCallback? onPress;
   const ProductTypeBox({
-    Key key,
-    @required this.icon,
-    @required this.title,
-    @required this.onPress,
+    Key? key,
+     this.icon,
+     this.title,
+     this.onPress,
   }) : super(key: key);
 
   @override
@@ -42,7 +42,7 @@ class ProductTypeBox extends StatelessWidget {
                   child: AspectRatio(
                     aspectRatio: 1,
                     child: SvgPicture.asset(
-                      icon,
+                      icon!,
                       color: kPrimaryColor,
                     ),
                   ),
@@ -50,7 +50,7 @@ class ProductTypeBox extends StatelessWidget {
               ),
               SizedBox(height: 2),
               Text(
-                title,
+                title!,
                 style: TextStyle(
                   color: kPrimaryColor,
                   fontSize: getProportionateScreenHeight(8),
