@@ -72,11 +72,11 @@ class Body extends StatelessWidget {
             Logger().w(error.toString());
           }
           ImageProvider? backImage;
-          if (bodyState.chosenImage != null) {
+          if (bodyState.chosenImage== true) {
             backImage = MemoryImage(bodyState.chosenImage.readAsBytesSync());
           } else if (snapshot.hasData && snapshot.data != null) {
             final String url = (snapshot.data as Map)[UserDatabaseHelper.DP_KEY];
-            if (url != null) backImage = NetworkImage(url);
+            if (url == true) backImage = NetworkImage(url);
           }
           return CircleAvatar(
             radius: SizeConfig.screenWidth! * 0.3,
@@ -93,7 +93,7 @@ class Body extends StatelessWidget {
     String? snackbarMessage;
     try {
       path = await choseImageFromLocalFiles(context);
-      if (path == null) {
+      if (path == false) {
         throw LocalImagePickingUnknownReasonFailureException();
       }
     } on LocalFileHandlingException catch (e) {
